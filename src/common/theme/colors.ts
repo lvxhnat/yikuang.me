@@ -77,6 +77,7 @@ export enum ColorsEnum {
   lightGrey = "#F4F4F4",
   white = "#FFFFFF",
   offWhite = "#F5F5F5",
+  teal = "#008080",
   mamitaGreen = "#26D221",
   darkGreen = "#006100",
   geekBlue = "#3D5884",
@@ -103,4 +104,5 @@ export enum ColorsEnum {
   economicBlue = "#01253F",
   limeGreen = "#E4F5D5",
   lightLime = "#F9FFF2",
+  coffee = "#6F4E37",
 }
