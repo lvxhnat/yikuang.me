@@ -140,8 +140,12 @@ export default function Skillset() {
             />
           </S.LogoWrapper>
         </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={6}></Grid>
+        <Grid item xs={6}>
+            <S.SubTitleWrapper>Data Visualisation Libraries</S.SubTitleWrapper>
+        </Grid>
+        <Grid item xs={6}>
+            <S.SubTitleWrapper>Cloud Services</S.SubTitleWrapper>
+        </Grid>
       </Grid>
     </Grid>
   );
