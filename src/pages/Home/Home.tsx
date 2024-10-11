@@ -4,6 +4,8 @@ import Homebar from "../../components/Homebar";
 import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
 import Skillset from "./Skillset/Skillset";
+import Experiences from "./Experiences";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Introduction />
       <AboutMe />
       <Skillset />
+      <Experiences />
+      <Projects />
     </S.HomeWrapper>
   );
 }

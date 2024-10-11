@@ -21,7 +21,7 @@ import Image from "../../../components/Image";
 
 export default function Skillset() {
   return (
-    <Grid container sx={{ padding: 10 }}>
+    <Grid container sx={{ padding: 10, backgroundColor: "white" }}>
       <Grid container>
         <S.TitleWrapper variant="h2" sx={{ paddingBottom: 5 }}>
           {" "}
