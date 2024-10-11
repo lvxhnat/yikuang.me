@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { IconButton, Snackbar } from '@mui/material';
+import React, { useState } from "react";
+import { IconButton, Snackbar } from "@mui/material";
 
 interface SocialMediaIconsProps {
   url: string;
@@ -15,7 +15,7 @@ const SocialMediaIcons = (props: SocialMediaIconsProps) => {
       window.open(props.url, "_blank");
     } else {
       navigator.clipboard.writeText(props.url);
-      setOpenSnackbar(true); 
+      setOpenSnackbar(true);
     }
   };
 
@@ -25,12 +25,10 @@ const SocialMediaIcons = (props: SocialMediaIconsProps) => {
 
   return (
     <>
-      <IconButton onClick={handleClick}>
-        {props.icon}
-      </IconButton>
+      <IconButton onClick={handleClick}>{props.icon}</IconButton>
       <Snackbar
         open={openSnackbar}
-        autoHideDuration={2000} 
+        autoHideDuration={2000}
         onClose={handleCloseSnackbar}
         message={`${props.url} copied to clipboard!`}
       />

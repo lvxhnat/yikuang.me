@@ -1,22 +1,7 @@
 import React from "react";
 import * as S from "./style";
-import { Grid, Typography } from "@mui/material";
-import CSSLogo from "../../../assets/logos/programming_languages/css3.png";
-import HTMLLogo from "../../../assets/logos/programming_languages/html5.png";
-import PythonLogo from "../../../assets/logos/programming_languages/python.png";
-import RLogo from "../../../assets/logos/programming_languages/r.png";
-import TSLogo from "../../../assets/logos/programming_languages/ts.png";
-import DaskLogo from "../../../assets/logos/data_science/dask.png";
-import GephiLogo from "../../../assets/logos/data_science/gephi.png";
-import ScikitLogo from "../../../assets/logos/data_science/scikit.png";
-import ScipyLogo from "../../../assets/logos/data_science/scipy.png";
-import NetworkXLogo from "../../../assets/logos/data_science/networkx.png";
-import PandasLogo from "../../../assets/logos/data_science/pandas.png";
-import PytorchLogo from "../../../assets/logos/ai_machine_learning/pytorch.png";
-import DagshubLogo from "../../../assets/logos/ai_machine_learning/dagshub.png";
-import TensorflowLogo from "../../../assets/logos/ai_machine_learning/tensorflow.png";
-import GymnasiumLogo from "../../../assets/logos/ai_machine_learning/gymnasium.png";
-import RapidsLogo from "../../../assets/logos/ai_machine_learning/nvidiarapids.png";
+import { Grid } from "@mui/material";
+import * as Logo from "./logos";
 import Image from "../../../components/Image";
 
 export default function Skillset() {
@@ -28,38 +13,44 @@ export default function Skillset() {
           Skills{" "}
         </S.TitleWrapper>
       </Grid>
-      <Grid container display="flex" spacing={5}>
+      <Grid container display="flex" spacing={10}>
         <Grid item xs={6}>
-          <S.SubTitleWrapper>Programming Languages</S.SubTitleWrapper>
+          <S.SubTitleWrapper> Languages</S.SubTitleWrapper>
           <S.LogoWrapper>
             <Image
               url="https://www.python.org/"
               title="Python"
-              src={PythonLogo}
+              src={Logo.PythonLogo}
               height="75px"
             />
             <Image
               url="https://www.r-project.org/"
               title="R"
-              src={RLogo}
+              src={Logo.RLogo}
               height="80px"
+            />
+            <Image
+              url="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              title="SQL"
+              src={Logo.SQLLogo}
+              height="75px"
             />
             <Image
               url="https://www.typescriptlang.org/"
               title="Typescript"
-              src={TSLogo}
+              src={Logo.TSLogo}
               height="70px"
             />
             <Image
               url="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
               title="HTML5"
-              src={HTMLLogo}
+              src={Logo.HTMLLogo}
               height="70px"
             />
             <Image
               url="https://developer.mozilla.org/en-US/docs/Web/CSS"
               title="CSS"
-              src={CSSLogo}
+              src={Logo.CSSLogo}
               height="90px"
             />
           </S.LogoWrapper>
@@ -70,37 +61,37 @@ export default function Skillset() {
             <Image
               url="https://pandas.pydata.org/"
               title="Pandas"
-              src={PandasLogo}
+              src={Logo.PandasLogo}
               height="75px"
             />
             <Image
               url="https://www.dask.org/"
               title="Dask"
-              src={DaskLogo}
+              src={Logo.DaskLogo}
               height="75px"
             />
             <Image
               url="https://scikit-learn.org/"
               title="SciKit-Learn"
-              src={ScikitLogo}
+              src={Logo.ScikitLogo}
               width="80px"
             />
             <Image
               url="https://scipy.org/"
               title="SciPy"
-              src={ScipyLogo}
-              height="80px"
+              src={Logo.ScipyLogo}
+              height="75px"
             />
             <Image
               url="https://networkx.org/"
               title="NetworkX"
-              src={NetworkXLogo}
+              src={Logo.NetworkXLogo}
               height="70px"
             />
             <Image
               url="https://gephi.org/"
               title="Gephi"
-              src={GephiLogo}
+              src={Logo.GephiLogo}
               height="70px"
             />
           </S.LogoWrapper>
@@ -111,40 +102,221 @@ export default function Skillset() {
             <Image
               url="https://rapids.ai/"
               title="RAPIDS"
-              src={RapidsLogo}
+              src={Logo.RapidsLogo}
               width="70px"
             />
             <Image
               url="https://pytorch.org/"
               title="Pytorch"
-              src={PytorchLogo}
+              src={Logo.PytorchLogo}
               height="65px"
             />
             <Image
               url="https://www.tensorflow.org/"
               title="Tensorflow"
-              src={TensorflowLogo}
+              src={Logo.TensorflowLogo}
               height="65px"
             />
             <Image
               url="https://gymnasium.farama.org/#"
               title="OpenAI Gym"
-              src={GymnasiumLogo}
+              src={Logo.GymnasiumLogo}
               height="65px"
+            />
+            <Image
+              url="https://neptune.ai/"
+              title="Neptune"
+              src={Logo.NeptuneLogo}
+              height="90px"
             />
             <Image
               url="https://dagshub.com/"
               title="Dagshub"
-              src={DagshubLogo}
+              src={Logo.DagshubLogo}
               height="80px"
             />
           </S.LogoWrapper>
         </Grid>
         <Grid item xs={6}>
-            <S.SubTitleWrapper>Data Visualisation Libraries</S.SubTitleWrapper>
+          <S.SubTitleWrapper>Data Visualisation Libraries</S.SubTitleWrapper>
+          <S.LogoWrapper>
+            <Image
+              url="https://www.tableau.com/"
+              title="Tableau"
+              src={Logo.TableauLogo}
+              height="60px"
+            />
+            <Image
+              url="https://superset.apache.org/"
+              title="Superset"
+              src={Logo.SupersetLogo}
+              height="35px"
+            />
+            <Image
+              url="https://streamlit.io/"
+              title="Streamlit"
+              src={Logo.StreamlitLogo}
+              height="70px"
+            />
+            <Image
+              url="https://matplotlib.org/"
+              title="Matplotlib"
+              src={Logo.MatplotlibLogo}
+              height="65px"
+            />
+            <Image
+              url="https://plotly.com/"
+              title="Plotly"
+              src={Logo.PlotlyLogo}
+              height="60px"
+            />
+            <Image
+              url="https://plotly.com/"
+              title="D3"
+              src={Logo.D3Logo}
+              height="60px"
+            />
+          </S.LogoWrapper>
         </Grid>
         <Grid item xs={6}>
-            <S.SubTitleWrapper>Cloud Services</S.SubTitleWrapper>
+          <S.SubTitleWrapper>Cloud Services & Databases</S.SubTitleWrapper>
+          <S.LogoWrapper>
+            <Image
+              url="https://cloud.google.com/?hl=en"
+              title="Google Cloud"
+              src={Logo.GcloudLogo}
+              height="50px"
+            />
+            <Image
+              url="https://aws.amazon.com/"
+              title="AWS"
+              src={Logo.AWSLogo}
+              height="50px"
+            />
+            <Image
+              url="https://www.postgresql.org/"
+              title="PostgreSQL"
+              src={Logo.PostgresLogo}
+              height="60px"
+            />
+            <Image
+              url="https://www.trychroma.com/"
+              title="ChromaDB"
+              src={Logo.ChromaDBLogo}
+              height="50px"
+            />
+            <Image
+              url="https://firebase.google.com/"
+              title="Firebase"
+              src={Logo.FirebaseLogo}
+              height="60px"
+            />
+            <Image
+              url="https://www.mongodb.com/"
+              title="MongoDB"
+              src={Logo.MongoDBLogo}
+              height="80px"
+            />
+          </S.LogoWrapper>
+        </Grid>
+        <Grid item xs={6}>
+          <S.SubTitleWrapper>Backend Frameworks & Libraries</S.SubTitleWrapper>
+          <S.LogoWrapper>
+            <Image
+              url="https://fastapi.tiangolo.com/"
+              title="FASTAPI"
+              src={Logo.FastAPILogo}
+              height="60px"
+            />
+            <Image
+              url="https://www.djangoproject.com/"
+              title="Django"
+              src={Logo.DjangoLogo}
+              height="60px"
+            />
+            <Image
+              url="https://pandera.readthedocs.io/en/stable/index.html"
+              title="Pandera"
+              src={Logo.PanderaLogo}
+              height="70px"
+            />
+            <Image
+              url="https://www.prefect.io"
+              title="Prefect"
+              src={Logo.PrefectLogo}
+              height="75px"
+            />
+            <Image
+              url="https://airflow.apache.org/"
+              title="Airflow"
+              src={Logo.AirflowLogo}
+              height="60px"
+            />
+            <Image
+              url="https://www.fullstackpython.com/celery.html"
+              title="Celery"
+              src={Logo.CeleryLogo}
+              height="80px"
+            />
+          </S.LogoWrapper>
+        </Grid>
+        <Grid item xs={6}>
+          <S.SubTitleWrapper>Frontend Frameworks & Libraries</S.SubTitleWrapper>
+          <S.LogoWrapper>
+            <Image
+              url="https://react.dev/"
+              title="React"
+              src={Logo.ReactLogo}
+              height="65px"
+            />
+            <Image
+              url="https://nextjs.org/"
+              title="Next"
+              src={Logo.NextLogo}
+              height="65px"
+            />
+            <Image
+              url="https://mui.com/"
+              title="MaterialUI"
+              src={Logo.MUILogo}
+              height="70px"
+            />
+            <Image
+              url="https://zustand.docs.pmnd.rs/getting-started/introduction"
+              title="Zustand"
+              src={Logo.ZustandLogo}
+              height="80px"
+            />
+            <Image
+              url="https://stripe.com/en-sg"
+              title="Stripe"
+              src={Logo.StripeLogo}
+              height="70px"
+            />
+          </S.LogoWrapper>
+        </Grid>
+        <Grid item xs={6}>
+          <S.SubTitleWrapper>Others</S.SubTitleWrapper>
+          <S.LogoWrapper>
+            <Image
+              url="https://git-scm.com/"
+              title="Git"
+              src={Logo.GitLogo}
+              height="70px"
+            />
+            <Image
+              url="https://about.gitlab.com/"
+              title="GitLab CI"
+              src={Logo.GitlabLogo}
+              height="70px"
+            />
+            <Image
+              url="https://scrapy.org/"
+              title="Scrapy"
+              src={Logo.ScrapyLogo}
+              height="75px"
+            />
+          </S.LogoWrapper>
         </Grid>
       </Grid>
     </Grid>

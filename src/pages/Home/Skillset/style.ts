@@ -18,7 +18,7 @@ export const SubTitleWrapper = styled(Typography)(({ theme }) => ({
 export const LogoWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
-  gap: 10,
+  gap: 5,
   paddingTop: 30,
 }));
 

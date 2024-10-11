@@ -1,12 +1,12 @@
 import React from "react";
 import * as S from "./style";
-import { Grid, IconButton } from "@mui/material";
+import { Grid } from "@mui/material";
 import ProfileLogo from "../../../assets/profile.png";
 import Coffee from "../../../assets/coffee.png";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import SocialMediaIcons from "../../../components/SocialMediaIcons";
 
 export default function Introduction() {
@@ -47,24 +47,24 @@ export default function Introduction() {
       </Grid>
       <Grid container>
         <SocialMediaIcons
-            icon={<GitHubIcon fontSize="large"/>}
-            action="redirect"
-            url="https://github.com/lvxhnat"
+          icon={<GitHubIcon fontSize="large" />}
+          action="redirect"
+          url="https://github.com/lvxhnat"
         />
         <SocialMediaIcons
-            icon={<LinkedInIcon fontSize="large"/>}
-            action="redirect"
-            url="https://www.linkedin.com/in/lohyikuang/"
+          icon={<LinkedInIcon fontSize="large" />}
+          action="redirect"
+          url="https://www.linkedin.com/in/lohyikuang/"
         />
         <SocialMediaIcons
-            icon={<LocalPhoneIcon fontSize="large"/>}
-            action="copy"
-            url="+65 8459 2359"
+          icon={<LocalPhoneIcon fontSize="large" />}
+          action="copy"
+          url="+65 8459 2359"
         />
         <SocialMediaIcons
-            icon={<EmailIcon fontSize="large"/>}
-            action="copy"
-            url="yikuang5@gmail.com"
+          icon={<EmailIcon fontSize="large" />}
+          action="copy"
+          url="yikuang5@gmail.com"
         />
       </Grid>
     </Grid>
