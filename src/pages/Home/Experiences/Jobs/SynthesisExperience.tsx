@@ -1,28 +1,11 @@
 import * as React from "react";
 import * as S from "../style";
-import * as SM from "../../style";
+import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";
 import SynthesisLogo from "../../../../assets/logos/experiences/synthesis.png";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
 import Image from "../../../../components/Image";
-
-interface LogoWrapperProps {
-  children: any;
-}
-const LogoWrapper = (props: LogoWrapperProps) => (
-  <SM.LogoWrapper
-    sx={{
-      width: "100%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      gap: 2,
-    }}
-  >
-    {props.children}
-  </SM.LogoWrapper>
-);
 
 export default function SynthesisExperience() {
   const synthesisSrc = "https://www.synthesis.partners/";
@@ -40,15 +23,16 @@ export default function SynthesisExperience() {
             L1 Data Scientist
           </S.StyledTypography>
           <S.StyledTypography variant="h6" color={ColorsEnum.grey}>
-            Synthesis Partners
+            Synthesis Partners - 🇸🇬 Singapore
           </S.StyledTypography>
-          (Aug 2022 - Jul 2023) , (Jan 2024 - Present)
+          <span>
+            <b>Part-Time / Full-Time </b> (Aug 2022 - Jul 2023) , (Jan 2024 - Present)
+          </span>
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Developed an embedding-based topic model on RAPIDS that ran 2.3x
-              faster and achieved a 21% higher coherence score than Latent
-              Dirichlet Allocation (LDA) methods that is used across large
-              client projects such as
+              Developed an Embedding-based Topic Model on RAPIDS that ran 2.3x
+              faster with a 21% higher coherence score than LDA methods, in line with current pain points felt across projects. 
+              This model is now used across large client projects such as
               <S.StyledLink href="https://www.nike.com"> Nike</S.StyledLink> and
               <S.StyledLink href="https://www.lego.com/en-sg/aboutus/lego-group">
                 {" "}
@@ -93,9 +77,11 @@ export default function SynthesisExperience() {
             Junior Data Scientist
           </S.StyledTypography>
           <S.StyledTypography variant="h6" color={ColorsEnum.grey}>
-            Synthesis Partners
+            Synthesis Partners - 🇸🇬 Singapore
           </S.StyledTypography>
-          (Nov 2020 - May 2022)
+          <span>
+            <b>Part-Time / Full-Time </b> (Nov 2020 - May 2022)
+          </span>
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
               Implemented ETL on Airflow using rotating proxies for scraping

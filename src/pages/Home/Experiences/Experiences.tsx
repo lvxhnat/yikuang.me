@@ -1,9 +1,7 @@
 import * as S from "./style";
 import * as React from "react";
-import InfiniwellLogo from "../../../assets/logos/experiences/infiniwell.png";
-import RazerLogo from "../../../assets/logos/experiences/razer.png";
 import { Grid } from "@mui/material";
-import SynthesisExperience from "./Jobs";
+import {SynthesisExperience, InfiniwellExperience, RazerExperience} from "./Jobs";
 
 interface ExperiencesProps {
   [others: string]: any;
@@ -28,26 +26,18 @@ function Experiences(props: ExperiencesProps, ref: any) {
             zIndex: 0,
           }}
         />
-        <Grid container>
-          <Grid item xs={2}>
-            <S.Image src={InfiniwellLogo} />
-          </Grid>
-        </Grid>
+        <InfiniwellExperience />
         <div
           style={{
             width: "2px",
-            height: "200px",
+            height: "500px",
             borderLeft: "3px dotted grey",
             marginLeft: "50px",
-            marginTop: "-3px",
+            marginTop: "-420px",
             zIndex: 0,
           }}
         />
-        <Grid container>
-          <Grid item xs={2}>
-            <S.Image src={RazerLogo} />
-          </Grid>
-        </Grid>
+        <RazerExperience />
       </Grid>
     </Grid>
   );

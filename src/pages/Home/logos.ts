@@ -10,8 +10,8 @@ import GephiLogo from "../../assets/logos/data_science/gephi.png";
 import ScikitLogo from "../../assets/logos/data_science/scikit.png";
 import ScipyLogo from "../../assets/logos/data_science/scipy.png";
 import NetworkXLogo from "../../assets/logos/data_science/networkx.png";
-import PandasLogo from "../../assets/logos/data_science/pandas.png";
 import SpacyLogo from "../../assets/logos/data_science/spacy.png";
+import KedroLogo from "../../assets/logos/data_science/kedro.png";
 
 import AWSLogo from "../../assets/logos/cloud_databases/aws.png";
 import GcloudLogo from "../../assets/logos/cloud_databases/gcloud.png";
@@ -50,6 +50,7 @@ import PanderaLogo from "../../assets/logos/backend_frameworks/pandera.png";
 import GitlabLogo from "../../assets/logos/others/gitlab.png";
 import ScrapyLogo from "../../assets/logos/others/scrapy.png";
 import GitLogo from "../../assets/logos/others/git.png";
+import DatahubLogo from "../../assets/logos/others/datahub.png";
 
 import VertexAILogo from "../../assets/logos/misc/vertex.png";
 
@@ -92,17 +93,17 @@ export const Logos: {
     src: CSSLogo,
     height: "90px",
   },
-  Pandas: {
-    url: "https://pandas.pydata.org/",
-    title: "Pandas",
-    src: PandasLogo,
-    height: "75px",
-  },
   Spacy: {
     url: "https://spacy.io/",
     title: "SpaCy",
     src: SpacyLogo,
     height: "30px",
+  },
+  Kedro: {
+    url: "https://kedro.org/",
+    title: "Kedro",
+    src: KedroLogo,
+    height: "70px",
   },
   Dask: {
     url: "https://www.dask.org/",
@@ -332,4 +333,10 @@ export const Logos: {
     src: VertexAILogo,
     height: "60px",
   },
+  Datahub: {
+    url: "https://datahubproject.io/",
+    title: "DataHub",
+    src: DatahubLogo,
+    height: "70px"
+  }
 };

@@ -11,12 +11,12 @@ interface SkillsetProps {
 const categories = {
   Languages: ["Python", "R", "SQL", "Typescript", "HTML5", "CSS"],
   "General Data Science": [
-    "Pandas",
     "Dask",
     "SciKit-Learn",
     "SciPy",
     "NetworkX",
     "Gephi",
+    "Kedro"
   ],
   "AI & Machine Learning": [
     "RAPIDS",
@@ -57,7 +57,7 @@ const categories = {
     "Zustand",
     "Stripe",
   ],
-  Others: ["Git", "GitLab CI", "Scrapy"],
+  Others: ["Git", "GitLab CI", "Scrapy", "Datahub"],
 };
 
 function Skillset(props: SkillsetProps, ref: any) {
