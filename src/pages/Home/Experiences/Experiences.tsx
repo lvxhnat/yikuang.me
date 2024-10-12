@@ -1,7 +1,11 @@
 import * as S from "./style";
 import * as React from "react";
 import { Grid } from "@mui/material";
-import {SynthesisExperience, InfiniwellExperience, RazerExperience} from "./Jobs";
+import {
+  SynthesisExperience,
+  InfiniwellExperience,
+  RazerExperience,
+} from "./Jobs";
 
 interface ExperiencesProps {
   [others: string]: any;

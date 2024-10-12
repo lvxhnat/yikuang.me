@@ -28,18 +28,17 @@ export default function RazerExperience() {
           (May 2022 - Aug 2022)
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-                Implemented a Fraud Detection Model with TinyBERT on AWS Sagemaker achieving a 0.93 F1-Score.
+              Implemented a Fraud Detection Model with TinyBERT on AWS Sagemaker
+              achieving a 0.93 F1-Score.
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Designed a data catalogue using DataHub equipped with IAM and Data Lineage Visualisations, reducing dataset search time by 30% across 10 departments.
+              Designed a data catalogue using DataHub equipped with IAM and Data
+              Lineage Visualisations, reducing dataset search time by 30% across
+              10 departments.
             </S.StyledListItem>
           </List>
           <LogoWrapper>
-            {[
-              "Datahub",
-              "Tensorflow",
-              "AWS"
-            ].map((logoKey: string) => (
+            {["Datahub", "Tensorflow", "AWS"].map((logoKey: string) => (
               <Image key={logoKey} {...Logos[logoKey as keyof typeof Logos]} />
             ))}
           </LogoWrapper>

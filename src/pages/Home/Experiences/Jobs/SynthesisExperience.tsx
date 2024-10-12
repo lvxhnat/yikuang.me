@@ -26,13 +26,15 @@ export default function SynthesisExperience() {
             Synthesis Partners - 🇸🇬 Singapore
           </S.StyledTypography>
           <span>
-            <b>Part-Time / Full-Time </b> (Aug 2022 - Jul 2023) , (Jan 2024 - Present)
+            <b>Part-Time / Full-Time </b> (Aug 2022 - Jul 2023) , (Jan 2024 -
+            Present)
           </span>
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
               Developed an Embedding-based Topic Model on RAPIDS that ran 2.3x
-              faster with a 21% higher coherence score than LDA methods, in line with current pain points felt across projects. 
-              This model is now used across large client projects such as
+              faster with a 21% higher coherence score than LDA methods, in line
+              with current pain points felt across projects. This model is now
+              used across large client projects such as
               <S.StyledLink href="https://www.nike.com"> Nike</S.StyledLink> and
               <S.StyledLink href="https://www.lego.com/en-sg/aboutus/lego-group">
                 {" "}

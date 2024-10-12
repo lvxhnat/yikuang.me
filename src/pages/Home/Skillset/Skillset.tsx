@@ -16,7 +16,7 @@ const categories = {
     "SciPy",
     "NetworkX",
     "Gephi",
-    "Kedro"
+    "Kedro",
   ],
   "AI & Machine Learning": [
     "RAPIDS",

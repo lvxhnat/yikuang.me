@@ -337,6 +337,6 @@ export const Logos: {
     url: "https://datahubproject.io/",
     title: "DataHub",
     src: DatahubLogo,
-    height: "70px"
-  }
+    height: "70px",
+  },
 };

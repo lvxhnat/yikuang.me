@@ -25,29 +25,39 @@ export default function InfiniwellExperience() {
           <S.StyledTypography variant="h6" color={ColorsEnum.grey}>
             Infiniwell AI - 🇳🇴 Norway, Trondheim
           </S.StyledTypography>
-          <span><b> Internship </b>(Aug 2023 - Dec 2024)</span>
+          <span>
+            <b> Internship </b>(Aug 2023 - Dec 2024)
+          </span>
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-                Developed an Attention-ResNet based model to forecast 30 heart conditions, achieving a 0.71 F1-Score. This model was later deployed for preliminary diagnoses for medical services such as 
-                <S.StyledLink href="https://www.schiller.ch/en"> Schiller</S.StyledLink>.
+              Developed an Attention-ResNet based model to forecast 30 heart
+              conditions, achieving a 0.71 F1-Score. This model was later
+              deployed for preliminary diagnoses for medical services such as
+              <S.StyledLink href="https://www.schiller.ch/en">
+                {" "}
+                Schiller
+              </S.StyledLink>
+              .
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-                Constructed a preprocessing pipeline for ECG waveforms using signal processing methods such as FFT and Pan-Thompkins for detecting QRS complexes.
+              Constructed a preprocessing pipeline for ECG waveforms using
+              signal processing methods such as FFT and Pan-Thompkins for
+              detecting QRS complexes.
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-                Optimized and set up ML research infrastructure for deep learning models, reducing average GPU memory usage by 12%.
+              Optimized and set up ML research infrastructure for deep learning
+              models, reducing average GPU memory usage by 12%.
             </S.StyledListItem>
           </List>
           <LogoWrapper>
-            {[
-              "Tensorflow",
-              "Neptune",
-              "Dagshub",
-              "Kedro",
-              "FASTAPI"
-            ].map((logoKey: string) => (
-              <Image key={logoKey} {...Logos[logoKey as keyof typeof Logos]} />
-            ))}
+            {["Tensorflow", "Neptune", "Dagshub", "Kedro", "FASTAPI"].map(
+              (logoKey: string) => (
+                <Image
+                  key={logoKey}
+                  {...Logos[logoKey as keyof typeof Logos]}
+                />
+              ),
+            )}
           </LogoWrapper>
           <S.StyledButtonWrapper>
             <S.StyledButton variant="contained">
