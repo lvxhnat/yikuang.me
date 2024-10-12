@@ -8,20 +8,36 @@ import Experiences from "./Experiences";
 import Projects from "./Projects";
 
 export default function Home() {
+  const skillsRef = React.useRef<HTMLDivElement>(null);
+  const experiencesRef = React.useRef<HTMLDivElement>(null);
+  const projectsRef = React.useRef<HTMLDivElement>(null);
+
   console.log(
     "%c Welcome to My Website! 🎉",
     "color: #4CAF50; font-size: 20px; font-weight: bold;",
     "\n",
   );
 
+  const scrollToRef = (ref: React.RefObject<HTMLElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error("ref.current is null or undefined");
+    }
+  };
+
   return (
     <S.HomeWrapper>
-      <Homebar />
+      <Homebar
+        projectsRef={() => scrollToRef(projectsRef)}
+        experiencesRef={() => scrollToRef(experiencesRef)}
+        skillsRef={() => scrollToRef(skillsRef)}
+      />
       <Introduction />
       <AboutMe />
-      <Skillset />
-      <Experiences />
-      <Projects />
+      <Skillset ref={skillsRef} />
+      <Experiences ref={experiencesRef} />
+      <Projects ref={projectsRef} />
     </S.HomeWrapper>
   );
 }

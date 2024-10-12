@@ -25,7 +25,16 @@ const SocialMediaIcons = (props: SocialMediaIconsProps) => {
 
   return (
     <>
-      <IconButton onClick={handleClick}>{props.icon}</IconButton>
+      <IconButton
+        onClick={handleClick}
+        sx={{
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        {props.icon}
+      </IconButton>
       <Snackbar
         open={openSnackbar}
         autoHideDuration={2000}
