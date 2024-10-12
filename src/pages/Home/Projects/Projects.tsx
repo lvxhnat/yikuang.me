@@ -14,7 +14,7 @@ function Projects(props: ProjectsProps, ref: any) {
         {" "}
         Projects{" "}
       </S.TitleWrapper>
-      <Grid container display="flex" alignItems="center" width="100%">
+      <Grid container display="flex" alignItems="center" width="100%" spacing={2}>
         <Grid item xs={4}>
           <ProjectCard />
         </Grid>

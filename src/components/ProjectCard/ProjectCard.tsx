@@ -1,5 +1,5 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
+import * as S from "./style";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 
 export default function ProjectCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <S.StyledCard>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -28,6 +28,6 @@ export default function ProjectCard() {
         <Button size="small">Share</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
-    </Card>
+    </S.StyledCard>
   );
 }
