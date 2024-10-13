@@ -7,9 +7,9 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 interface ProjectCardProps {
-  image: string
-  title: string
-  description: string
+  image: string;
+  title: string;
+  description: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps) {

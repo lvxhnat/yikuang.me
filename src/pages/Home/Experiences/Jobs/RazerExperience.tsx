@@ -6,6 +6,7 @@ import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
 import Image from "../../Image";
 import RazerLogo from "../../../../assets/logos/experiences/razer.png";
+import ReadmorePopup from "../../ReadmorePopup";
 
 export default function RazerExperience() {
   const razerSrc = "https://www.razer.com/";
@@ -42,11 +43,7 @@ export default function RazerExperience() {
               <Image key={logoKey} {...Logos[logoKey as keyof typeof Logos]} />
             ))}
           </LogoWrapper>
-          <S.StyledButtonWrapper>
-            <S.StyledButton variant="contained">
-              <Typography variant="body1">Tell me more!</Typography>
-            </S.StyledButton>
-          </S.StyledButtonWrapper>
+          <ReadmorePopup title="Razer Inc" dialogContent="" />
         </Grid>
       </Grid>
     </Grid>

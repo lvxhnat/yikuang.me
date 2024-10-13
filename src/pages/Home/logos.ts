@@ -145,8 +145,8 @@ export const Logos: {
   HuggingFace: {
     url: "https://huggingface.co/",
     title: "HuggingFace",
-    src: HuggingFaceLogo, 
-    height: "70px"
+    src: HuggingFaceLogo,
+    height: "70px",
   },
   // Pytorch: {
   //   url: "https://pytorch.org/",

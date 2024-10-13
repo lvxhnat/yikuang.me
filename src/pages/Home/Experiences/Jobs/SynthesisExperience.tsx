@@ -6,6 +6,8 @@ import SynthesisLogo from "../../../../assets/logos/experiences/synthesis.png";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
 import Image from "../../Image";
+import ReadmorePopup from "../../ReadmorePopup";
+import SynthesisExperience1 from "./SynthesisExperience/SynthesisExperience1";
 
 export default function SynthesisExperience() {
   const synthesisSrc = "https://www.synthesis.partners/";
@@ -59,11 +61,10 @@ export default function SynthesisExperience() {
               <Image key={logoKey} {...Logos[logoKey as keyof typeof Logos]} />
             ))}
           </LogoWrapper>
-          <S.StyledButtonWrapper>
-            <S.StyledButton variant="contained">
-              <Typography variant="body1">Tell me more!</Typography>
-            </S.StyledButton>
-          </S.StyledButtonWrapper>
+          <ReadmorePopup
+            title="Synthesis Partners"
+            dialogContent={<SynthesisExperience1 />}
+          />
         </Grid>
 
         <Grid item xs={2}></Grid>
@@ -116,11 +117,7 @@ export default function SynthesisExperience() {
               ),
             )}
           </LogoWrapper>
-          <S.StyledButtonWrapper>
-            <S.StyledButton variant="contained">
-              <Typography variant="body1">Tell me more!</Typography>
-            </S.StyledButton>
-          </S.StyledButtonWrapper>
+          <ReadmorePopup title="Synthesis Partners" dialogContent="test" />
         </Grid>
       </Grid>
     </Grid>

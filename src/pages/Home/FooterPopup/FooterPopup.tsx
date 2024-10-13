@@ -16,7 +16,7 @@ const FooterPopup: React.FC = () => {
           width="100%"
           color={ColorsEnum.white}
         >
-          <img src={Coffee} height="50px"/>
+          <img src={Coffee} height="50px" />
           Lets Get A Coffee!
         </Typography>
       </S.FooterPopupWrapper>

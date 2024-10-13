@@ -16,18 +16,6 @@ export const StyledListItem = styled(ListItem)(({ theme }) => ({
   fontSize: "1.1rem",
 }));
 
-export const StyledButton = styled(Button)(({ theme }) => ({
-  borderRadius: "50px",
-  textTransform: "none",
-  minWidth: "200px",
-}));
-
-export const StyledButtonWrapper = styled("div")(({ theme }) => ({
-  paddingTop: "30px",
-  display: "flex",
-  justifyContent: "center",
-}));
-
 export const TitleWrapper = styled(Typography)(({ theme }) => ({
   fontFamily: "Caros, sans-serif",
   fontSize: "3rem",
@@ -45,4 +33,21 @@ export const Image = styled("img")(({ theme }) => ({
     transform: "scale(1.05)",
     cursor: "pointer",
   },
+}));
+
+export const Divider1 = styled("div")(({ theme }) => ({
+  width: "2px",
+  height: "1000px",
+  borderLeft: "3px dotted grey",
+  marginLeft: "50px",
+  marginTop: "-925px",
+  zIndex: 0,
+}));
+export const Divider2 = styled("div")(({ theme }) => ({
+  width: "2px",
+  height: "500px",
+  borderLeft: "3px dotted grey",
+  marginLeft: "50px",
+  marginTop: "-420px",
+  zIndex: 0,
 }));

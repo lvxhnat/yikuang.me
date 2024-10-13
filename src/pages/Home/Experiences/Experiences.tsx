@@ -20,27 +20,9 @@ function Experiences(props: ExperiencesProps, ref: any) {
           Experience{" "}
         </S.TitleWrapper>
         <SynthesisExperience />
-        <div
-          style={{
-            width: "2px",
-            height: "1000px",
-            borderLeft: "3px dotted grey",
-            marginLeft: "50px",
-            marginTop: "-925px",
-            zIndex: 0,
-          }}
-        />
+        <S.Divider1 />
         <InfiniwellExperience />
-        <div
-          style={{
-            width: "2px",
-            height: "500px",
-            borderLeft: "3px dotted grey",
-            marginLeft: "50px",
-            marginTop: "-420px",
-            zIndex: 0,
-          }}
-        />
+        <S.Divider2 />
         <RazerExperience />
       </Grid>
     </Grid>

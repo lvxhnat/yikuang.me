@@ -1,3 +1,3 @@
 import FooterPopup from "./FooterPopup";
 
-export default FooterPopup
+export default FooterPopup;

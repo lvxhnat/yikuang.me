@@ -6,6 +6,6 @@ export const StyledCard = styled(Card)(({ theme }) => ({
   "&:hover": {
     cursor: "pointer",
     transition: "transform 0.3s ease-in-out",
-    transform: "scale(1.01)"
-  }
+    transform: "scale(1.01)",
+  },
 }));
