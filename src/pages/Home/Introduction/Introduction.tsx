@@ -2,7 +2,6 @@ import React from "react";
 import * as S from "./style";
 import { Grid } from "@mui/material";
 import ProfileLogo from "../../../assets/profile.png";
-import Coffee from "../../../assets/coffee.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";

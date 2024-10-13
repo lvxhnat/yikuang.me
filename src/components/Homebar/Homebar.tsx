@@ -13,12 +13,6 @@ interface HomebarProps {
   projectsRef: any;
 }
 export default function Homebar(props: HomebarProps) {
-  const scrollToRef = (ref: any) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <AppBar
       position="static"

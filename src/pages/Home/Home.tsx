@@ -6,6 +6,8 @@ import AboutMe from "./AboutMe";
 import Skillset from "./Skillset/Skillset";
 import Experiences from "./Experiences";
 import Projects from "./Projects";
+import Footer from "./Footer";
+import FooterPopup from "./FooterPopup";
 
 export default function Home() {
   const skillsRef = React.useRef<HTMLDivElement>(null);
@@ -38,6 +40,8 @@ export default function Home() {
       <Skillset ref={skillsRef} />
       <Experiences ref={experiencesRef} />
       <Projects ref={projectsRef} />
+      <Footer />
+      <FooterPopup />
     </S.HomeWrapper>
   );
 }

@@ -20,8 +20,8 @@ const categories = {
   ],
   "AI & Machine Learning": [
     "RAPIDS",
-    "Pytorch",
     "Tensorflow",
+    "HuggingFace",
     "OpenAI Gym",
     "Neptune",
     "Dagshub",

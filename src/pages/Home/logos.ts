@@ -20,8 +20,9 @@ import PostgresLogo from "../../assets/logos/cloud_databases/postgres.png";
 import FirebaseLogo from "../../assets/logos/cloud_databases/firebase.png";
 import ChromaDBLogo from "../../assets/logos/cloud_databases/chroma.png";
 
-import PytorchLogo from "../../assets/logos/ai_machine_learning/pytorch.png";
+// import PytorchLogo from "../../assets/logos/ai_machine_learning/pytorch.png";
 import DagshubLogo from "../../assets/logos/ai_machine_learning/dagshub.png";
+import HuggingFaceLogo from "../../assets/logos/ai_machine_learning/huggingface.png";
 import TensorflowLogo from "../../assets/logos/ai_machine_learning/tensorflow.png";
 import NeptuneLogo from "../../assets/logos/ai_machine_learning/neptune.png";
 import GymnasiumLogo from "../../assets/logos/ai_machine_learning/gymnasium.png";
@@ -141,12 +142,18 @@ export const Logos: {
     src: RapidsLogo,
     height: "65px",
   },
-  Pytorch: {
-    url: "https://pytorch.org/",
-    title: "Pytorch",
-    src: PytorchLogo,
-    height: "65px",
+  HuggingFace: {
+    url: "https://huggingface.co/",
+    title: "HuggingFace",
+    src: HuggingFaceLogo, 
+    height: "70px"
   },
+  // Pytorch: {
+  //   url: "https://pytorch.org/",
+  //   title: "Pytorch",
+  //   src: PytorchLogo,
+  //   height: "65px",
+  // },
   Tensorflow: {
     url: "https://www.tensorflow.org/",
     title: "Tensorflow",
