@@ -5,7 +5,7 @@ import { Logos } from "../../logos";
 import SynthesisLogo from "../../../../assets/logos/experiences/synthesis.png";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
-import Image from "../../../../components/Image";
+import Image from "../../Image";
 
 export default function SynthesisExperience() {
   const synthesisSrc = "https://www.synthesis.partners/";

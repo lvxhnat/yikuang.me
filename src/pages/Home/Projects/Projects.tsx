@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import * as S from "../style";
-import ProjectCard from "../../../components/ProjectCard";
+import ProjectCard from "../ProjectCard";
 
 interface ProjectsProps {
   [others: string]: any;

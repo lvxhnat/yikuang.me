@@ -4,7 +4,7 @@ import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
-import Image from "../../../../components/Image";
+import Image from "../../Image";
 import RazerLogo from "../../../../assets/logos/experiences/razer.png";
 
 export default function RazerExperience() {
@@ -23,7 +23,7 @@ export default function RazerExperience() {
             Data Science Intern
           </S.StyledTypography>
           <S.StyledTypography variant="h6" color={ColorsEnum.grey}>
-            Infiniwell AI - 🇳🇴 Norway, Trondheim
+            Razer Inc - 🇸🇬 Singapore
           </S.StyledTypography>
           (May 2022 - Aug 2022)
           <List sx={{ listStyleType: "disc" }}>
