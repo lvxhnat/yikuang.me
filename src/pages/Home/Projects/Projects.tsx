@@ -16,13 +16,7 @@ function Projects(props: ProjectsProps, ref: any) {
       </S.TitleWrapper>
       <Grid container display="flex" alignItems="center" width="100%" spacing={2}>
         <Grid item xs={4}>
-          <ProjectCard />
-        </Grid>
-        <Grid item xs={4}>
-          <ProjectCard />
-        </Grid>
-        <Grid item xs={4}>
-          <ProjectCard />
+          <ProjectCard image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SRRmhH4X5N2e4QalcoxVbzYsD44C-sQv-w&s" title="" description="" />
         </Grid>
       </Grid>
     </Grid>
