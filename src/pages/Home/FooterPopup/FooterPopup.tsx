@@ -5,7 +5,7 @@ import Coffee from "../../../assets/coffee.png";
 
 const FooterPopup: React.FC = () => {
   return (
-    <Link href="/" style={{ color: ColorsEnum.darkGrey }}>
+    <Link href="https://cal.com/yikuang" style={{ color: ColorsEnum.darkGrey }}>
       <S.FooterPopupWrapper>
         <Typography
           variant="body1"
