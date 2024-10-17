@@ -4,9 +4,9 @@ import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
-import Image from "../../Image";
+import Image from "../../../../components/Image";
 import RazerLogo from "../../../../assets/logos/experiences/razer.png";
-import ReadmorePopup from "../../ReadmorePopup";
+import ReadmorePopup from "../ReadmorePopup";
 
 export default function RazerExperience() {
   const razerSrc = "https://www.razer.com/";

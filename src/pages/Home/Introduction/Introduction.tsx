@@ -6,7 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import SocialMediaIcons from "../SocialMediaIcons";
+import SocialMediaIcons from "../../../components/SocialMediaIcons";
 
 export default function Introduction() {
   return (

@@ -19,6 +19,7 @@ export const buttonTheme = {
     ],
     styleOverrides: {
       root: {
+        color: ColorsEnum.white,
         textTransform: "none" as const,
         fontSize: "calc(0.8rem + 0.15vw)",
         boxShadow: "none",

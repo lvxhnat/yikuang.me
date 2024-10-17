@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "../style";
 import { Grid } from "@mui/material";
-import Image from "../Image";
+import Image from "../../../components/Image";
 import { Logos } from "../logos"; // Import the dynamic Logos object
 
 interface SkillsetProps {

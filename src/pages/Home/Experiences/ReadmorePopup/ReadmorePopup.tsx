@@ -30,7 +30,7 @@ export default function ReadmorePopup(props: ReadmorePopupProps) {
       </S.StyledButtonWrapper>
       <S.BootstrapDialog onClose={handleClose} open={open} fullWidth>
         <DialogTitle id="customized-dialog-title">
-            <Typography variant="h5">{props.title}</Typography>
+          <Typography variant="h5">{props.title}</Typography>
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -44,9 +44,9 @@ export default function ReadmorePopup(props: ReadmorePopupProps) {
         >
           <CloseIcon />
         </IconButton>
-        <DialogContent dividers sx={{ width: "100%" }}>
+        <S.BootstrapDialogContent dividers>
           {props.dialogContent}
-        </DialogContent>
+        </S.BootstrapDialogContent>
       </S.BootstrapDialog>
     </React.Fragment>
   );

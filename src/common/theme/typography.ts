@@ -20,7 +20,8 @@ export const typographyTheme = {
     fontWeight: 500,
   },
   body2: {
-    fontSize: `calc(0.65rem + 0.35vw)`,
+    fontSize: `1.1rem`,
+    lineHeight: 2,
   },
   subtitle1: {
     fontSize: `calc(0.5rem + 0.3vw)`,

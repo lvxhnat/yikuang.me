@@ -4,9 +4,9 @@ import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
-import Image from "../../Image";
+import Image from "../../../../components/Image";
 import InfiniwellLogo from "../../../../assets/logos/experiences/infiniwell.png";
-import ReadmorePopup from "../../ReadmorePopup";
+import ReadmorePopup from "../ReadmorePopup";
 
 export default function InfiniwellExperience() {
   const infiniwellSrc = "https://www.infiniwell.ai/";

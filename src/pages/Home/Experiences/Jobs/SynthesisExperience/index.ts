@@ -1,5 +1,3 @@
-import SynthesisExperience1 from "./SynthesisExperience1"
+import SynthesisExperience1 from "./SynthesisExperience1";
 
-export {
-    SynthesisExperience1
-}
+export { SynthesisExperience1 };

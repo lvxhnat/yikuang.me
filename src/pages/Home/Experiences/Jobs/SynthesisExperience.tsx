@@ -5,8 +5,8 @@ import { Logos } from "../../logos";
 import SynthesisLogo from "../../../../assets/logos/experiences/synthesis.png";
 import { Grid, List, Typography } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
-import Image from "../../Image";
-import ReadmorePopup from "../../ReadmorePopup";
+import Image from "../../../../components/Image";
+import ReadmorePopup from "../ReadmorePopup";
 import SynthesisExperience1 from "./SynthesisExperience/SynthesisExperience1";
 
 export default function SynthesisExperience() {

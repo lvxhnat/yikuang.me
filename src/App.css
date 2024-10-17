@@ -1,5 +1,9 @@
-@import url("https://fonts.cdnfonts.com/css/caros");
-
+@font-face {
+  font-family: "Caros";
+  src: url("./assets/fonts/caros/cretype\ \ Caros.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
 body {
   margin: 0;
   background-color: #f8f7f1;

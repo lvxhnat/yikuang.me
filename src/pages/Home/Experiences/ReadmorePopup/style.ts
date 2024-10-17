@@ -1,18 +1,21 @@
-import { Button, Dialog } from "@mui/material";
+import { Button, Dialog, DialogContent } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
+export const BootstrapDialogContent = styled(DialogContent)(({ theme }) => ({
+  "&::-webkit-scrollbar": {
+    display: "none",
+  },
+}));
+
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  width: "100%",
-  minHeight: "300px",
   "& .MuiDialogContent-root": {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
   },
   "& .MuiDialogActions-root": {
     padding: theme.spacing(1),
   },
   "& .MuiPaper-root": {
     maxWidth: "80%",
-    maxHeight: "none",
     overflowX: "hidden",
   },
 }));
