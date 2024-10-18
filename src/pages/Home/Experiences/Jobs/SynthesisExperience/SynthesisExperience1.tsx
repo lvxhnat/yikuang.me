@@ -75,27 +75,27 @@ export default function SynthesisExperience1() {
           similarities using{" "}
           <SM.StyledLink href="https://cupy.dev/">cuPy</SM.StyledLink>:
         </Typography>
-        <code>
+        <code style={{ fontSize: "0.7rem" }}>
           <pre>
             {`
-          import cupy
+import cupy
 
-          # can expect more speed ups due to GPU utilisation # base similarity matrix (all dot products)
-          # replace this with A.dot(A.T).toarray() for sparse representation
-          similarity = cupy.dot(A, A.T)
-          
-          # squared magnitude of preference vectors (number of occurrences)
-          # inverse squared magnitude
-          inv_square_mag = 1 / cupy.diag(similarity)
-          
-          # if doesn't occur, set inverse magnitude to zero (instead of inf)
-          inv_square_mag[cupy.isinf(inv_square_mag)] = 0
-          
-          # inverse of the magnitude
-          inv_mag = cupy.sqrt(inv_square_mag)
-          
-          # cosine similarity (elementwise multiply by inverse magnitudes)
-          cosine = (similarity * inv_mag).T * inv_mag # Range between 0 and 1
+# can expect more speed ups due to GPU utilisation # base similarity matrix (all dot products)
+# replace this with A.dot(A.T).toarray() for sparse representation
+similarity = cupy.dot(A, A.T)
+
+# squared magnitude of preference vectors (number of occurrences)
+# inverse squared magnitude
+inv_square_mag = 1 / cupy.diag(similarity)
+
+# if doesn't occur, set inverse magnitude to zero (instead of inf)
+inv_square_mag[cupy.isinf(inv_square_mag)] = 0
+
+# inverse of the magnitude
+inv_mag = cupy.sqrt(inv_square_mag)
+
+# cosine similarity (elementwise multiply by inverse magnitudes)
+cosine = (similarity * inv_mag).T * inv_mag # Range between 0 and 1
           `}
           </pre>
         </code>
