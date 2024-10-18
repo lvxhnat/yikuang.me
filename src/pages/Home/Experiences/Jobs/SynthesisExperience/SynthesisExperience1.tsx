@@ -10,7 +10,7 @@ import PictureFrame from "../../PictureFrame";
 
 export default function SynthesisExperience1() {
   return (
-    <S.FooterContainer>
+    <S.SynthesisExperienceContainer>
       <S.ImageContainer container spacing={5}>
         <Grid item xs={12} md={6}>
           <PictureFrame
@@ -101,6 +101,6 @@ export default function SynthesisExperience1() {
         </code>
         <Typography variant="body1"></Typography>
       </Grid>
-    </S.FooterContainer>
+    </S.SynthesisExperienceContainer>
   );
 }

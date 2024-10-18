@@ -66,7 +66,7 @@ export default function SemanticSearch() {
         alignItems="center"
         justifyContent="center"
       >
-        <LogoWrapper sx={{ paddingTop: 2 }}>
+        <LogoWrapper sx={{ paddingTop: 2, justifyContent: "center" }}>
           {skills.map((v) => (
             <Image key={v} {...Logos[v]} />
           ))}

@@ -1,6 +1,4 @@
-import * as React from "react";
 import * as S from "./style";
-
 import { Grid } from "@mui/material";
 import MavroCover from "../../../../assets/projects/startup/mavro.png";
 import NoshCover from "../../../../assets/projects/startup/nosh.png";
@@ -12,7 +10,16 @@ export default function NumerousFailedStartups() {
     <Grid container gap={5}>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <S.StyledImage src={NoshCover} width="100%" />
+          <S.StyledImage
+            src={NoshCover}
+            width="100%"
+            onClick={() =>
+              window.open(
+                "https://www.canva.com/design/DAGLMU5WyRM/AHYlgIh16rBkrxAHwbjVZw/edit?utm_content=DAGLMU5WyRM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/>",
+                "_blank",
+              )
+            }
+          />
         </Grid>
         <Grid item xs={12} md={6}>
           <S.StyledTitle variant="h2"> Nosh </S.StyledTitle>

@@ -8,6 +8,7 @@ import { ColorsEnum } from "../../../../common/theme";
 import Image from "../../../../components/Image";
 import ReadmorePopup from "../../../../components/ReadmorePopup";
 import SynthesisExperience1 from "./SynthesisExperience/SynthesisExperience1";
+import SynthesisExperience2 from "./SynthesisExperience/SynthesisExperience2";
 
 export default function SynthesisExperience() {
   const synthesisSrc = "https://www.synthesis.partners/";
@@ -139,7 +140,7 @@ export default function SynthesisExperience() {
               ),
             )}
           </LogoWrapper>
-          <ReadmorePopup title="Synthesis Partners" dialogContent="test" />
+          <ReadmorePopup title="Synthesis Partners" dialogContent={<SynthesisExperience2 />} />
         </Grid>
       </Grid>
     </Grid>

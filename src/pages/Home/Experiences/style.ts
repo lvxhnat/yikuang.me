@@ -112,10 +112,10 @@ export const Divider1 = styled("div")(({ theme }) => ({
 
 export const Divider2 = styled("div")(({ theme }) => ({
   width: "2px",
-  height: "500px",
+  height: "495px",
   borderLeft: "3px dotted grey",
   marginLeft: "50px",
-  marginTop: "-420px",
+  marginTop: "-415px",
   zIndex: 0,
   [theme.breakpoints.down("md")]: {
     display: "none",
