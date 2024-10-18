@@ -140,7 +140,10 @@ export default function SynthesisExperience() {
               ),
             )}
           </LogoWrapper>
-          <ReadmorePopup title="Synthesis Partners" dialogContent={<SynthesisExperience2 />} />
+          <ReadmorePopup
+            title="Synthesis Partners"
+            dialogContent={<SynthesisExperience2 />}
+          />
         </Grid>
       </Grid>
     </Grid>
