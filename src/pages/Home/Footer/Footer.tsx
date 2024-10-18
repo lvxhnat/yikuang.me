@@ -1,25 +1,16 @@
 import React from "react";
+import * as S from "./style";
+import { StyledLink } from "../Experiences/style";
 
 export default function Footer() {
   return (
-    <div
-      style={{
-        minHeight: "100px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <S.FooterContainer align="center">
       Built by yours truly with ReactJS, MUI and deployed using Google Compute
       Engine, and written in Typescript. Available on Github{" "}
-      <a
-        href="https://github.com/lvxhnat/yikuang.me"
-        style={{ textDecoration: "none" }}
-        target="_blank"
-      >
-        &nbsp;here
-      </a>
-      .
-    </div>
+      <StyledLink href="https://github.com/lvxhnat/yikuang.me">
+        {" "}
+        here{" "}
+      </StyledLink>
+    </S.FooterContainer>
   );
 }

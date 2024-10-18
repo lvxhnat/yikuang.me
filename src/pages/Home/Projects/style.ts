@@ -7,11 +7,3 @@ export const ContainerWrapper = styled(Grid)(({ theme }) => ({
     padding: theme.spacing(5),
   },
 }));
-
-export const StyledProjectContainer = styled(Grid)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  width: "100%",
-  spacing: 10,
-  [theme.breakpoints.down("md")]: {},
-}));

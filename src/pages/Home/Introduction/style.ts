@@ -9,7 +9,7 @@ export const IntroductionContainer = styled(Grid)(({ theme }) => ({
   paddingBottom: theme.spacing(15),
   width: "100%",
   [theme.breakpoints.down("md")]: {
-    padding: theme.spacing(3),
+    padding: theme.spacing(5),
   },
 }));
 

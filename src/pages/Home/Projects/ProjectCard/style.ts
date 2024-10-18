@@ -13,6 +13,9 @@ export const StyledCard = styled(Card)(({ theme }) => ({
     transition: "transform 0.3s ease-in-out",
     transform: "scale(1.01)",
   },
+  [theme.breakpoints.down("md")]: {
+    height: "400px",
+  },
 }));
 
 export const StyledCardContent = styled(CardContent)(({ theme }) => ({

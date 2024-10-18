@@ -21,7 +21,7 @@ function Projects(props: ProjectsProps, ref: any) {
         {" "}
         Projects{" "}
       </SM.TitleWrapper>
-      <S.StyledProjectContainer container>
+      <Grid container spacing={3}>
         <Grid item md={4} xs={12}>
           <ProjectCard
             image={SemanticSearchCover}
@@ -32,7 +32,7 @@ function Projects(props: ProjectsProps, ref: any) {
             dialogContent={<SemanticSearch />}
           />
         </Grid>
-        <Grid md={4} xs={12}>
+        <Grid item md={4} xs={12}>
           <ProjectCard
             image={StartupsCover}
             title="Entrepreneurship"
@@ -42,7 +42,7 @@ function Projects(props: ProjectsProps, ref: any) {
             dialogContent={<NumerousFailedStartups />}
           />
         </Grid>
-        <Grid md={4} xs={12}>
+        <Grid item md={4} xs={12}>
           <ProjectCard
             image={SharesiteCover}
             title="Sharesite"
@@ -55,7 +55,7 @@ function Projects(props: ProjectsProps, ref: any) {
             dialogContent={<></>}
           />
         </Grid>
-      </S.StyledProjectContainer>
+      </Grid>
     </S.ContainerWrapper>
   );
 }

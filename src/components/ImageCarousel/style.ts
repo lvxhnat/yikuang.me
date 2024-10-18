@@ -30,22 +30,28 @@ export const Carousel = styled("div")({
   transition: "transform 0.5s ease-in-out",
 });
 
-export const CarouselImage = styled("div")({
+export const CarouselImage = styled("div")(({ theme }) => ({
   flex: "0 0 50%", // Adjust based on the number of images shown
   boxSizing: "border-box",
   padding: "0 5px",
   overflow: "hidden",
-});
+  [theme.breakpoints.down("md")]: {
+    flex: "0 0 100%", // Adjust based on the number of images shown
+  },
+}));
 
 interface CarouselImagesProps {
   currentIndex: number;
 }
 
 export const CarouselImages = styled("div")<CarouselImagesProps>(
-  ({ currentIndex }) => ({
+  ({ theme, currentIndex }) => ({
     display: "flex",
     transition: "transform 0.5s ease-in-out",
     transform: `translateX(-${(currentIndex / 2) * 100}%)`,
+    [theme.breakpoints.down("md")]: {
+      transform: `translateX(-${currentIndex * 100}%)`,
+    },
   }),
 );
 
