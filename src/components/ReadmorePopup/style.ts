@@ -8,6 +8,7 @@ export const BootstrapDialogContent = styled(DialogContent)(({ theme }) => ({
 }));
 
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  zIndex: 100,
   "& .MuiDialogContent-root": {
     padding: theme.spacing(3),
   },

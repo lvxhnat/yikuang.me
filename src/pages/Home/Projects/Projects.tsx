@@ -1,7 +1,14 @@
-import { Grid } from "@mui/material";
 import React from "react";
-import * as S from "../style";
+import * as S from "./style";
+import * as SM from "../style";
+import { Grid } from "@mui/material";
 import ProjectCard from "./ProjectCard";
+import SemanticSearchCover from "../../../assets/projects/semantic-search/cover.png";
+import SharesiteCover from "../../../assets/projects/sharesite/cover.png";
+import StartupsCover from "../../../assets/projects/startup/mavro.png";
+
+import SemanticSearch from "./SemanticSearch";
+import NumerousFailedStartups from "./NumerousFailedStartups";
 
 interface ProjectsProps {
   [others: string]: any;
@@ -9,27 +16,47 @@ interface ProjectsProps {
 
 function Projects(props: ProjectsProps, ref: any) {
   return (
-    <Grid container ref={ref} sx={{ padding: 10, width: "100%" }}>
-      <S.TitleWrapper variant="h2" sx={{ paddingBottom: 5 }}>
+    <S.ContainerWrapper container ref={ref}>
+      <SM.TitleWrapper variant="h2" sx={{ paddingBottom: 5 }}>
         {" "}
         Projects{" "}
-      </S.TitleWrapper>
-      <Grid
-        container
-        display="flex"
-        alignItems="center"
-        width="100%"
-        spacing={2}
-      >
-        <Grid item xs={4}>
+      </SM.TitleWrapper>
+      <S.StyledProjectContainer container>
+        <Grid item md={4} xs={12}>
           <ProjectCard
-            image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SRRmhH4X5N2e4QalcoxVbzYsD44C-sQv-w&s"
-            title=""
-            description=""
+            image={SemanticSearchCover}
+            title="MedRAG"
+            category="Project"
+            subtitle="Fine tuned generative T5 for simplifying and explaining medical records to patients"
+            description="Feb 2024 - Present"
+            dialogContent={<SemanticSearch />}
           />
         </Grid>
-      </Grid>
-    </Grid>
+        <Grid md={4} xs={12}>
+          <ProjectCard
+            image={StartupsCover}
+            title="Entrepreneurship"
+            category="Others"
+            subtitle="I have tested many ideas over the years, pitched, and developed failed products. This section is dedicated to my startup graveyard 🪦 and the journeys along the way."
+            description="Feb 2022 - Present"
+            dialogContent={<NumerousFailedStartups />}
+          />
+        </Grid>
+        <Grid md={4} xs={12}>
+          <ProjectCard
+            image={SharesiteCover}
+            title="Sharesite"
+            category="Project"
+            subtitle="
+            Sharesite allows users to build their own personal portfolios in minutes, not days. 
+            Abstract away design & coding and focus on the good part - the content you want to put in your portfolio."
+            description="Mar 2024 - Jul 2024"
+            redirectURL="https://sharesite.me/"
+            dialogContent={<></>}
+          />
+        </Grid>
+      </S.StyledProjectContainer>
+    </S.ContainerWrapper>
   );
 }
 

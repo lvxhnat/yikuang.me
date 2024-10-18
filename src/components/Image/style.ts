@@ -7,6 +7,9 @@ export const Image = styled("img")(({ theme }) => ({
   "&:hover": {
     transform: "scale(1.1)",
   },
+  [theme.breakpoints.down("md")]: {
+    height: "30px",
+  },
 }));
 
 export const ImageFixedContainer = styled("div")(({ theme }) => ({
@@ -14,6 +17,10 @@ export const ImageFixedContainer = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   height: "80px",
+  [theme.breakpoints.down("md")]: {
+    height: "40px",
+    width: "40px",
+  },
 }));
 
 export const ImageContainer = styled("div")(({ theme }) => ({
@@ -23,6 +30,10 @@ export const ImageContainer = styled("div")(({ theme }) => ({
   justifyContent: "space-between",
   alignItems: "center",
   flexDirection: "column",
+  [theme.breakpoints.down("md")]: {
+    height: "auto",
+    width: "auto",
+  },
 }));
 
 interface StyledTypographyProps {

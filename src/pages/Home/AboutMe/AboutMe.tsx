@@ -5,16 +5,18 @@ import { ColorsEnum } from "../../../common/theme";
 
 export default function AboutMe() {
   return (
-    <Grid container sx={{ backgroundColor: ColorsEnum.white, padding: 15 }}>
+    <S.ContainerWrapper>
       <Grid item xs={4}></Grid>
       <Grid item xs={8}>
         <S.TitleWrapper>About Me</S.TitleWrapper>
         <S.DescriptionWrapper>
-          Insert some introduction about myself that is at most 3 lines long so
-          that it doesnt get boring. Something like this is already considerably
-          long, and I wouldnt go any worse.
+          I find joy in the nuanced intersections of software engineering and
+          data science. Crafting scalable programs is particularly exhilarating
+          for me as I find a unique thrill in building systems that can adapt
+          and grow, knowing that they can support an ever-increasing demand
+          without faltering.
         </S.DescriptionWrapper>
       </Grid>
-    </Grid>
+    </S.ContainerWrapper>
   );
 }

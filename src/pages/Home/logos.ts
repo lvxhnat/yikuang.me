@@ -162,7 +162,7 @@ export const Logos: {
   },
   "OpenAI Gym": {
     url: "https://gymnasium.farama.org/#",
-    title: "OpenAI Gym",
+    title: "Gymnasium",
     src: GymnasiumLogo,
     height: "65px",
   },
@@ -170,13 +170,13 @@ export const Logos: {
     url: "https://neptune.ai/",
     title: "Neptune",
     src: NeptuneLogo,
-    height: "90px",
+    height: "65px",
   },
   Dagshub: {
     url: "https://dagshub.com/",
     title: "Dagshub",
     src: DagshubLogo,
-    height: "80px",
+    height: "65px",
   },
   Tableau: {
     url: "https://www.tableau.com/",

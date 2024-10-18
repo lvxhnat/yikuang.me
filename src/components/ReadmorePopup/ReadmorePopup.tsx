@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as S from "./style";
 import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
@@ -9,6 +8,8 @@ import Typography from "@mui/material/Typography";
 interface ReadmorePopupProps {
   title: string;
   dialogContent: any;
+  showButton?: boolean;
+  open?: boolean;
 }
 
 export default function ReadmorePopup(props: ReadmorePopupProps) {
@@ -28,7 +29,11 @@ export default function ReadmorePopup(props: ReadmorePopupProps) {
           <Typography variant="body1">Tell me more!</Typography>
         </S.StyledButton>
       </S.StyledButtonWrapper>
-      <S.BootstrapDialog onClose={handleClose} open={open} fullWidth>
+      <S.BootstrapDialog
+        onClose={handleClose}
+        open={props.open ?? open}
+        fullWidth
+      >
         <DialogTitle id="customized-dialog-title">
           <Typography variant="h5">{props.title}</Typography>
         </DialogTitle>

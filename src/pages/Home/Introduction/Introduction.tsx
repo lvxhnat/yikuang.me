@@ -10,9 +10,9 @@ import SocialMediaIcons from "../../../components/SocialMediaIcons";
 
 export default function Introduction() {
   return (
-    <Grid container sx={{ padding: 10, paddingTop: 0, maxHeight: "800px" }}>
+    <S.IntroductionContainer container>
       <Grid container>
-        <Grid item xs={5} gap={1}>
+        <Grid item xs={12} md={5} gap={1}>
           <S.TitleWrapper> Hey There,</S.TitleWrapper>
           <S.TitleWrapper>I'm Yi Kuang</S.TitleWrapper>
           <S.DescriptionWrapper
@@ -21,11 +21,8 @@ export default function Introduction() {
           >
             Data Scientist by trade, problem solver at heart.
           </S.DescriptionWrapper>
-          <S.DescriptionWrapper align="left">
-            With a passion for building data-centric products.
-          </S.DescriptionWrapper>
 
-          <Grid container sx={{ marginTop: 30 }} gap={2}>
+          <S.SocialMediaWrapper container gap={2}>
             <SocialMediaIcons
               icon={<GitHubIcon fontSize="large" />}
               action="redirect"
@@ -46,26 +43,13 @@ export default function Introduction() {
               action="copy"
               url="yikuang5@gmail.com"
             />
-          </Grid>
+          </S.SocialMediaWrapper>
         </Grid>
         <Grid item xs={6}></Grid>
       </Grid>
-      <Grid
-        container
-        display="flex"
-        justifyContent="center"
-        sx={{ height: "300px" }}
-      >
-        <img
-          src={ProfileLogo}
-          style={{
-            height: "600px",
-            position: "absolute",
-            marginTop: -500,
-            marginLeft: 100,
-          }}
-        />
-      </Grid>
-    </Grid>
+      <S.ProfileContainerWrapper container>
+        <S.Image src={ProfileLogo} />
+      </S.ProfileContainerWrapper>
+    </S.IntroductionContainer>
   );
 }

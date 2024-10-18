@@ -15,6 +15,7 @@ export default function Footer() {
       <a
         href="https://github.com/lvxhnat/yikuang.me"
         style={{ textDecoration: "none" }}
+        target="_blank"
       >
         &nbsp;here
       </a>

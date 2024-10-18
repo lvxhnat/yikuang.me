@@ -1,5 +1,5 @@
 export const typographyTheme = {
-  fontFamily: "Public Sans, sans-serif",
+  fontFamily: "Caros",
   h1: {
     fontSize: `calc(1.2rem + 1.2vw)`,
     fontWeight: "bold",
@@ -35,5 +35,6 @@ export const typographyTheme = {
   },
   button: {
     fontSize: "0.8rem + 0.2vw",
+    fontWeight: "bold",
   },
 };

@@ -2,33 +2,48 @@ import * as React from "react";
 import * as S from "../style";
 import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";
-import { Grid, List, Typography } from "@mui/material";
+import { Grid, List } from "@mui/material";
 import { ColorsEnum } from "../../../../common/theme";
 import Image from "../../../../components/Image";
 import InfiniwellLogo from "../../../../assets/logos/experiences/infiniwell.png";
-import ReadmorePopup from "../ReadmorePopup";
+import ReadmorePopup from "../../../../components/ReadmorePopup";
 
 export default function InfiniwellExperience() {
   const infiniwellSrc = "https://www.infiniwell.ai/";
   return (
-    <Grid container>
+    <S.InfiniwellContainer container>
       <Grid container columns={18}>
-        <Grid item xs={2}>
+        <S.ImageWrapper item md={2} xs={5}>
           <S.Image
             src={InfiniwellLogo}
             onClick={() => window.open(infiniwellSrc, "_blank")}
           />
-        </Grid>
-        <Grid item xs={16} display="flex" flexDirection="column" gap={1}>
-          <S.StyledTypography variant="h5">
-            ML Engineer Intern
-          </S.StyledTypography>
-          <S.StyledTypography variant="h6" color={ColorsEnum.grey}>
-            Infiniwell AI - 🇳🇴 Norway, Trondheim
-          </S.StyledTypography>
-          <span>
+        </S.ImageWrapper>
+        <Grid
+          item
+          xs={18}
+          md={16}
+          display="flex"
+          flexDirection="column"
+          gap={1}
+        >
+          <Grid container>
+            <S.DynamicImageWrapper item md={2} xs={3}>
+              <S.Image
+                src={InfiniwellLogo}
+                onClick={() => window.open(infiniwellSrc, "_blank")}
+              />
+            </S.DynamicImageWrapper>
+            <Grid item md={12} xs={9}>
+              <S.StyledTitle variant="h5">ML Engineer Intern</S.StyledTitle>
+              <S.StyledSubtitle variant="h6" color={ColorsEnum.grey}>
+                Infiniwel AI - 🇳🇴 Trondheim
+              </S.StyledSubtitle>
+            </Grid>
+          </Grid>
+          <S.StyledPosition>
             <b> Internship </b>(Aug 2023 - Dec 2024)
-          </span>
+          </S.StyledPosition>
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
               Developed an Attention-ResNet based model to forecast 30 heart
@@ -50,7 +65,7 @@ export default function InfiniwellExperience() {
               models, reducing average GPU memory usage by 12%.
             </S.StyledListItem>
           </List>
-          <LogoWrapper>
+          <LogoWrapper style={{ justifyContent: "center" }}>
             {["Tensorflow", "Neptune", "Dagshub", "Kedro", "FASTAPI"].map(
               (logoKey: string) => (
                 <Image
@@ -63,6 +78,6 @@ export default function InfiniwellExperience() {
           <ReadmorePopup title="Infiniwell.ai" dialogContent="" />
         </Grid>
       </Grid>
-    </Grid>
+    </S.InfiniwellContainer>
   );
 }

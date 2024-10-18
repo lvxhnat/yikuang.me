@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { AppBar, Box, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export const StyledButton = styled(Button)(({ theme }) => ({
@@ -7,4 +7,22 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   display: "block",
   textTransform: "none",
   "&:hover": { backgroundColor: "transparent" },
+}));
+
+export const StyledAppBar = styled(AppBar)(({ theme }) => ({
+  backgroundColor: "transparent",
+  boxShadow: "none",
+  position: "static",
+  display: "flex",
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+}));
+
+export const StyledBox = styled(Box)(({ theme }) => ({
+  flexGrow: 1,
+  justifyContent: "flex-end",
+  gap: theme.spacing(30),
+  marginRight: 30,
+  display: "flex",
 }));

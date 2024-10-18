@@ -1,5 +1,6 @@
 import React from "react";
-import * as S from "../style";
+import * as SM from "../style";
+import * as S from "./style";
 import { Grid } from "@mui/material";
 import Image from "../../../components/Image";
 import { Logos } from "../logos"; // Import the dynamic Logos object
@@ -62,22 +63,17 @@ const categories = {
 
 function Skillset(props: SkillsetProps, ref: any) {
   return (
-    <Grid
-      {...props}
-      ref={ref}
-      container
-      sx={{ padding: 10, backgroundColor: "white" }}
-    >
+    <S.SkillsetContainer {...props} ref={ref} container>
       <Grid container>
-        <S.TitleWrapper variant="h2" sx={{ paddingBottom: 5 }}>
+        <SM.TitleWrapper variant="h2" sx={{ paddingBottom: 5 }}>
           Skills
-        </S.TitleWrapper>
+        </SM.TitleWrapper>
       </Grid>
-      <Grid container display="flex" spacing={10}>
+      <Grid container display="flex" spacing={5}>
         {Object.keys(categories).map((category) => (
-          <Grid item xs={6} key={category}>
-            <S.SubTitleWrapper>{category}</S.SubTitleWrapper>
-            <S.LogoWrapper>
+          <Grid item xs={12} md={6} key={category}>
+            <SM.SubTitleWrapper>{category}</SM.SubTitleWrapper>
+            <SM.LogoWrapper>
               {categories[category as keyof typeof categories].map(
                 (logoTitle: string) => (
                   <Image
@@ -86,11 +82,11 @@ function Skillset(props: SkillsetProps, ref: any) {
                   />
                 ),
               )}
-            </S.LogoWrapper>
+            </SM.LogoWrapper>
           </Grid>
         ))}
       </Grid>
-    </Grid>
+    </S.SkillsetContainer>
   );
 }
 

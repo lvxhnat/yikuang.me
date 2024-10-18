@@ -6,6 +6,9 @@ export const TitleWrapper = styled(Typography)(({ theme }) => ({
   fontSize: "3rem",
   fontWeight: 400,
   lineHeight: 1,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "2rem",
+  },
 }));
 
 export const SubTitleWrapper = styled(Typography)(({ theme }) => ({
@@ -13,13 +16,20 @@ export const SubTitleWrapper = styled(Typography)(({ theme }) => ({
   fontSize: "2rem",
   fontWeight: 400,
   lineHeight: 1,
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1rem",
+  },
 }));
 
 export const LogoWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
-  gap: 5,
+  gap: theme.spacing(1),
   paddingTop: 30,
+  width: "100%",
+  [theme.breakpoints.down("md")]: {
+    justifyContent: "space-evenly",
+  },
 }));
 
 export const HomeWrapper = styled("div")(({ theme }) => ({
