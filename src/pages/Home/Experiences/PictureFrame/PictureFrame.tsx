@@ -1,23 +1,15 @@
 import React from "react";
+import * as S from "./style";
 import { ColorsEnum } from "../../../../common/theme";
 import { Typography } from "@mui/material";
 interface PictureFrameProps {
   img: any;
   caption: string;
-  height: string;
   [others: string]: any;
 }
 export default function PictureFrame(props: PictureFrameProps) {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "space-between",
-        height: props.height,
-      }}
-    >
+    <S.Container style={{ height: props.height }}>
       <img src={props.img} width="100%" {...props} />
       <Typography
         variant="overline"
@@ -27,6 +19,6 @@ export default function PictureFrame(props: PictureFrameProps) {
       >
         {props.caption}
       </Typography>
-    </div>
+    </S.Container>
   );
 }

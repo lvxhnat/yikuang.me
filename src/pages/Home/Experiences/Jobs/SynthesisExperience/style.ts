@@ -7,3 +7,10 @@ export const FooterContainer = styled(Typography)(({ theme }) => ({
     padding: theme.spacing(1),
   },
 }));
+
+export const ImageContainer = styled(Grid)(({ theme }) => ({
+  paddingBottom: theme.spacing(2),
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+}));

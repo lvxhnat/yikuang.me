@@ -11,10 +11,9 @@ import PictureFrame from "../../PictureFrame";
 export default function SynthesisExperience1() {
   return (
     <S.FooterContainer>
-      <Grid container spacing={5}>
+      <S.ImageContainer container spacing={5}>
         <Grid item xs={12} md={6}>
           <PictureFrame
-            height="280px"
             img={DashboardImage}
             caption="Dashboard Sample"
             style={{ maxHeight: "250px" }}
@@ -22,7 +21,6 @@ export default function SynthesisExperience1() {
         </Grid>
         <Grid item xs={12} md={3}>
           <PictureFrame
-            height="280px"
             caption="2D-Embedding Map of Reddit Conversations on Trump"
             img={EmbeddingImage}
             style={{ maxHeight: "250px", maxWidth: "250px" }}
@@ -30,17 +28,16 @@ export default function SynthesisExperience1() {
         </Grid>
         <Grid item xs={12} md={3}>
           <PictureFrame
-            height="280px"
             caption="2D-Embedding Map of Twitter Conversations on Biden"
             img={EmbeddingImage2}
             style={{ maxHeight: "250px", maxWidth: "250px" }}
           />
         </Grid>
-      </Grid>
-      <Grid container paddingTop={3}>
+      </S.ImageContainer>
+      <Grid container>
         <Typography variant="body1">
           One of the main projects that I worked on was a topic modelling tool
-          adapted for large corpus datasetSM. Corpuses of text that were scraped
+          adapted for large corpus dataset. Corpuses of text that were scraped
           from platforms like
           <SM.StyledLink href="https://x.com/">
             {" "}
@@ -51,26 +48,26 @@ export default function SynthesisExperience1() {
         </Typography>
         <Typography variant="body1">
           I had to opportunity to implement the full model pipeline using the
-          <SM.StyledLink href="https://rapidSM.ai/">
+          <SM.StyledLink href="https://rapids.ai/">
             {" "}
             NVIDIA RAPIDS Library
           </SM.StyledLink>{" "}
           (cuDF, cuML) and
-          <SM.StyledLink href="https://sbert.net/docs/sentence_transformer/pretrained_modelSM.html">
+          <SM.StyledLink href="https://sbert.net/docs/sentence_transformer/pretrained_models.html">
             {" "}
             Sentence Transformers
           </SM.StyledLink>{" "}
           to for topic modelling. The model itself utilises
-          <SM.StyledLink href="https://umap-learn.readthedocSM.io/en/latest/">
+          <SM.StyledLink href="https://umap-learn.readthedocs.io/en/latest/">
             {" "}
             UMAP
           </SM.StyledLink>{" "}
           and{" "}
-          <SM.StyledLink href="https://hdbscan.readthedocSM.io/en/latest/how_hdbscan_workSM.html">
+          <SM.StyledLink href="https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html">
             HDBSCAN
           </SM.StyledLink>{" "}
           for clustering, providing a robust framework for identifying both
-          outlier and prominent topic clusterSM.
+          outlier and prominent topic clusters.
           <br />
           <br />
           This was a major undertaking, and included many interesting
