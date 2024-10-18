@@ -4,7 +4,6 @@ import { ColorsEnum } from "../../../common/theme";
 
 export const IntroductionContainer = styled(Grid)(({ theme }) => ({
   padding: theme.spacing(10),
-  paddingTop: 0,
   maxHeight: "800px",
   paddingBottom: theme.spacing(15),
   width: "100%",

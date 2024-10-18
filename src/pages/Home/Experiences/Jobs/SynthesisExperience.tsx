@@ -74,7 +74,6 @@ export default function SynthesisExperience() {
               "Tensorflow",
               "Google Cloud",
               "FASTAPI",
-              "Spacy",
               "D3",
             ].map((logoKey: string) => (
               <Image key={logoKey} {...Logos[logoKey as keyof typeof Logos]} />

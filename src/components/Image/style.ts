@@ -3,13 +3,13 @@ import { styled } from "@mui/material/styles";
 
 export const Image = styled("img")(({ theme }) => ({
   cursor: "pointer",
-  height: "85px",
+  height: "100px",
   transition: "transform 0.3s ease-in-out",
   "&:hover": {
     transform: "scale(1.1)",
   },
   [theme.breakpoints.down("md")]: {
-    height: "50px",
+    height: "55px",
   },
 }));
 

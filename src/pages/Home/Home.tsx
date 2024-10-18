@@ -8,7 +8,6 @@ import Experiences from "./Experiences";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import FooterPopup from "./FooterPopup";
-import BeyondWork from "./BeyondWork";
 
 export default function Home() {
   const skillsRef = React.useRef<HTMLDivElement>(null);

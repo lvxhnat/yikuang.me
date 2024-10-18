@@ -1,7 +1,5 @@
 import * as React from "react";
 import * as S from "./style";
-
-import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";

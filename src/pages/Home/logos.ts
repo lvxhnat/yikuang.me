@@ -190,7 +190,7 @@ export const Logos: {
   },
   "Google Cloud": {
     url: "https://cloud.google.com/?hl=en",
-    title: "Google Cloud",
+    title: "GCloud",
     src: GcloudLogo,
   },
   AWS: {
