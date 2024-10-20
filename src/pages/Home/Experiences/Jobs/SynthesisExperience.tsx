@@ -51,6 +51,10 @@ export default function SynthesisExperience() {
 
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
+              Responsible for turning techno-jargon into plain English for
+              non-technical stakeholders and project clients.
+            </S.StyledListItem>
+            <S.StyledListItem sx={{ display: "list-item" }}>
               Developed an Embedding-based Topic Model on RAPIDS that ran 2.3x
               faster with a 21% higher coherence score than LDA methods, in line
               with current pain points felt across projects. This model is now
@@ -63,8 +67,16 @@ export default function SynthesisExperience() {
               .
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              # Led effort in forecasting category trends for PepsiCo using
-              Fuzzy Cognitive Mapping & Monte Carlo models.
+              Worked on
+              <S.StyledLink href="https://link.springer.com/chapter/10.1007/978-3-031-01919-7_6">
+                {" "}
+                Fuzzy Cognitive Modelling (FCM){" "}
+              </S.StyledLink>
+              models for causal analysis and futures scenarios forecasting for
+              clients such as{" "}
+              <S.StyledLink href="https://www.pepsico.com/">
+                PepsiCo.
+              </S.StyledLink>
             </S.StyledListItem>
           </List>
 

@@ -52,6 +52,7 @@ import GitlabLogo from "../../assets/logos/others/gitlab.png";
 import ScrapyLogo from "../../assets/logos/others/scrapy.png";
 import GitLogo from "../../assets/logos/others/git.png";
 import DatahubLogo from "../../assets/logos/others/datahub.png";
+import JiraLogo from "../../assets/logos/others/jira.png";
 
 import VertexAILogo from "../../assets/logos/misc/vertex.png";
 
@@ -297,5 +298,10 @@ export const Logos: {
     url: "https://datahubproject.io/",
     title: "DataHub",
     src: DatahubLogo,
+  },
+  Jira: {
+    url: "https://www.atlassian.com/",
+    title: "Jira",
+    src: JiraLogo,
   },
 };
