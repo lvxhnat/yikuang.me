@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./style";
+import * as S from "../style";
 import { Grid } from "@mui/material";
 import Seq1 from "../../../../assets/projects/semantic-search/seq-1.png";
 import Seq2 from "../../../../assets/projects/semantic-search/seq-2.png";
@@ -10,6 +10,7 @@ import { StyledLink } from "../../Experiences/style";
 import { LogoWrapper } from "../../style";
 import Image from "../../../../components/Image";
 import { Logos } from "../../logos";
+import NotionLink from "../../../../components/NotionLink";
 
 export default function SemanticSearch() {
   const skills = [
@@ -28,36 +29,43 @@ export default function SemanticSearch() {
       <Grid container sx={{ paddingTop: "20px" }}>
         <S.StyledContent variant="body1">
           Continuing from my time at Infiniwell, I went on to create a medical
-          based multi-modal RAG that allows users to better understand the
-          terminology used behind their medical reports. Because medical reports
-          tend to be data sensitive, and solutions need to be
+          based RAG model that allows users to better understand the terminology
+          used behind their medical reports. Because medical reports tend to be
+          data sensitive, the model needed to be
           <StyledLink href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html">
             {" "}
             HIPAA compliant{" "}
           </StyledLink>
-          , I took the route of using self-hosted models.
+          , which resulted in me taking the route of using self-hosted models.
           <br />
         </S.StyledContent>
         <S.StyledContent variant="body1">
           <br />
           The base model itself was a fine-tuned
-          <StyledLink href="https://huggingface.co/google-t5/t5-base">
+          <StyledLink href="https://huggingface.co/google/flan-t5-base">
             {" "}
-            T5 Base Model,{" "}
+            Flan-T5 Base Model,{" "}
           </StyledLink>
           trained on the
           <StyledLink href="https://github.com/MIT-LCP/mimic-code">
             {" "}
             Physionet MIMIC Database
           </StyledLink>{" "}
+          , and multiple other QA datasets found in the transformers library,
           which contains masked patient medical records. Evaluation metrics used
-          were the BERT and ROUGE scores.
+          is mainly the BERT score set.
           <br />
         </S.StyledContent>
         <S.StyledContent variant="body1">
           <br />
           All this was done on a single NVIDIA TITAN RTX GPU, which meant that I
           had to learnt alot about optimising CUDA memory usage!
+        </S.StyledContent>
+        <S.StyledContent variant="body1">
+          <br />
+          Read my notes from the project here:
+          <br />
+          <NotionLink href="https://notion.so" title="LLM Introduction" />
         </S.StyledContent>
       </Grid>
       <Grid

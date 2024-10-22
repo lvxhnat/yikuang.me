@@ -53,7 +53,7 @@ import ScrapyLogo from "../../assets/logos/others/scrapy.png";
 import GitLogo from "../../assets/logos/others/git.png";
 import DatahubLogo from "../../assets/logos/others/datahub.png";
 import JiraLogo from "../../assets/logos/others/jira.png";
-
+import DockerLogo from "../../assets/logos/others/docker.png";
 import VertexAILogo from "../../assets/logos/misc/vertex.png";
 
 export const Logos: {
@@ -273,6 +273,11 @@ export const Logos: {
     url: "https://stripe.com/en-sg",
     title: "Stripe",
     src: StripeLogo,
+  },
+  Docker: {
+    url: "https://www.docker.com/",
+    title: "Docker",
+    src: DockerLogo,
   },
   Git: {
     url: "https://git-scm.com/",

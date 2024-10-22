@@ -4,6 +4,7 @@ import { ColorsEnum } from "../../../common/theme";
 
 export const ContainerWrapper = styled(Grid)(({ theme }) => ({
   padding: theme.spacing(15),
+  paddingBottom: 0,
   [theme.breakpoints.down("md")]: {
     padding: theme.spacing(5),
   },
@@ -81,6 +82,7 @@ export const TitleWrapper = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     fontSize: "2rem",
   },
+  paddingBottom: theme.spacing(5),
 }));
 
 export const Image = styled("img")(({ theme }) => ({
@@ -100,11 +102,11 @@ export const Image = styled("img")(({ theme }) => ({
 
 export const Divider1 = styled("div")(({ theme }) => ({
   width: "2px",
-  height: "1000px",
+  height: "1200px",
   borderLeft: "3px dotted grey",
   marginLeft: "50px",
-  marginTop: "-925px",
-  zIndex: 0,
+  marginTop: "-1100px",
+  zIndex: -3,
   [theme.breakpoints.down("md")]: {
     display: "none",
   },

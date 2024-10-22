@@ -9,6 +9,7 @@ import StartupsCover from "../../../assets/projects/startup/mavro.png";
 
 import SemanticSearch from "./SemanticSearch";
 import NumerousFailedStartups from "./NumerousFailedStartups";
+import Watchtower from "./Watchtower";
 
 interface ProjectsProps {
   [others: string]: any;
@@ -27,7 +28,7 @@ function Projects(props: ProjectsProps, ref: any) {
             image={SemanticSearchCover}
             title="MedRAG"
             category="Project"
-            subtitle="Fine tuned generative T5 for simplifying and explaining medical records to patients"
+            subtitle="A RAG Augmented Fine Tuned (RAFT) model using a Fine-tuned Flan-T5 for simplifying and explaining medical records to patients."
             description="Feb 2024 - Present"
             dialogContent={<SemanticSearch />}
           />
@@ -50,9 +51,22 @@ function Projects(props: ProjectsProps, ref: any) {
             subtitle="
             Sharesite allows users to build their own personal portfolios in minutes, not days. 
             Abstract away design & coding and focus on the good part - the content you want to put in your portfolio."
-            description="Mar 2024 - Jul 2024"
+            description="Jun 2024 - Jul 2024"
             redirectURL="https://sharesite.me/"
             dialogContent={<></>}
+          />
+        </Grid>
+        <Grid item md={4} xs={12}>
+          <ProjectCard
+            image={SharesiteCover}
+            title="Watchtower"
+            category="Project"
+            subtitle="
+            Watchtower is my personal trading environment, an ambitious project set out to build my own Bloomberg. 
+            Integrated with features that I have learnt over the years.
+            "
+            description="Jun 2020 - Present"
+            dialogContent={<Watchtower />}
           />
         </Grid>
       </Grid>

@@ -58,7 +58,7 @@ const categories = {
     "Zustand",
     "Stripe",
   ],
-  Others: ["Git", "GitLab CI", "Scrapy", "Datahub", "Jira"],
+  Others: ["Git", "GitLab CI", "Docker", "Scrapy", "Datahub", "Jira"],
 };
 
 function Skillset(props: SkillsetProps, ref: any) {
