@@ -26,7 +26,12 @@ export default function SemanticSearch() {
       <Grid container>
         <ImageCarousel images={[Seq1, Seq2, Seq3, Seq4]} />
       </Grid>
-      <Grid container sx={{ paddingTop: "20px" }}>
+      <Grid
+        container
+        sx={{ paddingTop: "20px" }}
+        display="flex"
+        flexDirection="column"
+      >
         <S.StyledContent variant="body1">
           Continuing from my time at Infiniwell, I went on to create a medical
           based RAG model that allows users to better understand the terminology
@@ -60,12 +65,13 @@ export default function SemanticSearch() {
           <br />
           All this was done on a single NVIDIA TITAN RTX GPU, which meant that I
           had to learnt alot about optimising CUDA memory usage!
+          <br />
         </S.StyledContent>
         <S.StyledContent variant="body1">
           <br />
-          Read my notes from the project here:
+          Read some of the notes I made during this project here:{" "}
+          <NotionLink href="" title="LLM Introduction" />
           <br />
-          <NotionLink href="https://notion.so" title="LLM Introduction" />
         </S.StyledContent>
       </Grid>
       <Grid

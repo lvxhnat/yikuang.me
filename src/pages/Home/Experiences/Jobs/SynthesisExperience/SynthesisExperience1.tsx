@@ -1,7 +1,6 @@
 import React from "react";
 import * as SM from "../../style";
 import * as S from "./style";
-
 import { Grid, Typography } from "@mui/material";
 import EmbeddingImage from "../../../../../assets/logos/projects/embedding-map.png";
 import EmbeddingImage2 from "../../../../../assets/logos/projects/embedding-map-2.png";
@@ -37,17 +36,18 @@ export default function SynthesisExperience1() {
       <Grid container>
         <Typography variant="body1">
           One of the main projects that I worked on was a topic modelling tool
-          adapted for large corpus dataset. Corpuses of text that were scraped
-          from platforms like
+          adapted for processing large text corpuses. These corpuses usually
+          contain conversations from platforms such as
           <SM.StyledLink href="https://x.com/">
             {" "}
             Twitter (Now X)
           </SM.StyledLink>{" "}
-          are sometimes too large to perform analytics on. <br />
+          which are sometimes too large to perform analytics on within an
+          acceptable time. <br />
           <br />
         </Typography>
         <Typography variant="body1">
-          I had to opportunity to implement the full model pipeline using the
+          To do this, I had to implement a model pipeline using the
           <SM.StyledLink href="https://rapids.ai/">
             {" "}
             NVIDIA RAPIDS Library
@@ -57,7 +57,7 @@ export default function SynthesisExperience1() {
             {" "}
             Sentence Transformers
           </SM.StyledLink>{" "}
-          to for topic modelling. The model itself utilises
+          for topic modelling. The model itself utilises
           <SM.StyledLink href="https://umap-learn.readthedocs.io/en/latest/">
             {" "}
             UMAP
@@ -66,8 +66,8 @@ export default function SynthesisExperience1() {
           <SM.StyledLink href="https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html">
             HDBSCAN
           </SM.StyledLink>{" "}
-          for clustering, providing a robust framework for identifying both
-          outlier and prominent topic clusters.
+          for dimension reduction and clustering, providing a robust framework
+          for identifying both outlier and prominent topic clusters.
           <br />
           <br />
           This was a major undertaking, and included many interesting

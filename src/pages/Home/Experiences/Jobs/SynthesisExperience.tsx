@@ -37,7 +37,7 @@ export default function SynthesisExperience() {
               />
             </S.DynamicImageWrapper>
             <Grid item md={12} xs={9}>
-              <S.StyledTitle variant="h5">L1 Data Scientist</S.StyledTitle>
+              <S.StyledTitle variant="h5">L1 Data Scientist </S.StyledTitle>
               <S.StyledSubtitle variant="h6">
                 Synthesis Partners - 🇸🇬 Singapore
               </S.StyledSubtitle>
@@ -51,20 +51,23 @@ export default function SynthesisExperience() {
 
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Responsible for turning techno-jargon into plain English for
-              non-technical stakeholders and project clients.
+              At Synthesis, I was responsible for collaborating with fellow
+              engineers to implement open source intelligence systems at scale,
+              and for turning techno-jargon into plain English for non-technical
+              stakeholders and project clients.
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Developed an Embedding-based Topic Model on RAPIDS that ran 2.3x
-              faster with a 21% higher coherence score than LDA methods, in line
-              with current pain points felt across projects. This model is now
-              used across large client projects such as
+              Designed and implemented an Embedding-based Topic Model on RAPIDS
+              that achieved a 2.3x speedup and improved coherence scores by 21%
+              over traditional LDA methods. This model, now integral to several
+              large-scale client projects at
               <S.StyledLink href="https://www.nike.com"> Nike</S.StyledLink> and
               <S.StyledLink href="https://www.lego.com/en-sg/aboutus/lego-group">
                 {" "}
                 LEGO Group
               </S.StyledLink>
-              .
+              , enables deeper insights into public discourse surrounding
+              brands.
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
               Worked on
@@ -83,7 +86,7 @@ export default function SynthesisExperience() {
           <LogoWrapper style={{ justifyContent: "center" }}>
             {[
               "RAPIDS",
-              "VertexAI",
+              "Dask",
               "Tensorflow",
               "Google Cloud",
               "FASTAPI",
@@ -119,11 +122,6 @@ export default function SynthesisExperience() {
 
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Implemented ETL on Airflow using rotating proxies for scraping
-              social media, cutting data curation time by half.
-            </S.StyledListItem>
-
-            <S.StyledListItem sx={{ display: "list-item" }}>
               Led the creation of a social media analytics pipeline for
               forecasting podcast demand across 13 markets for
               <S.StyledLink href="https://www.bbc.com/"> BBC UK</S.StyledLink>.
@@ -133,12 +131,19 @@ export default function SynthesisExperience() {
 
             <S.StyledListItem sx={{ display: "list-item" }}>
               Implemented resolution-free Leiden algorithms for analysing large
-              social networks that ran 3x faster than benchmarks for
+              social networks that ran 3x faster than{" "}
+              <S.StyledLink href="https://networkx.org/">NetworkX</S.StyledLink>{" "}
+              benchmarks for
               <S.StyledLink href="https://about.netflix.com/en">
                 {" "}
-                Netflix
-              </S.StyledLink>
-              , reducing analytics time.
+                Netflix,
+              </S.StyledLink>{" "}
+              allowing them to gain first-hand insights into conversations
+              surrounding title releases.
+            </S.StyledListItem>
+            <S.StyledListItem sx={{ display: "list-item" }}>
+              Implemented ETL on Airflow using rotating proxies for scraping
+              Instagram posts, cutting data curation time by half.
             </S.StyledListItem>
           </List>
 

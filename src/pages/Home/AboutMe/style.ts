@@ -4,7 +4,7 @@ import { ColorsEnum } from "../../../common/theme";
 
 export const ContainerWrapper = styled(Grid)(({ theme }) => ({
   backgroundColor: ColorsEnum.white,
-  padding: theme.spacing(15),
+  padding: theme.spacing(10),
   [theme.breakpoints.down("md")]: {
     padding: theme.spacing(5),
   },

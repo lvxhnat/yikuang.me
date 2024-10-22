@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard";
 import SemanticSearchCover from "../../../assets/projects/semantic-search/cover.png";
 import SharesiteCover from "../../../assets/projects/sharesite/cover.png";
 import StartupsCover from "../../../assets/projects/startup/mavro.png";
+import WatchtowerCover from "../../../assets/projects/watchtower/superset.png";
 
 import SemanticSearch from "./SemanticSearch";
 import NumerousFailedStartups from "./NumerousFailedStartups";
@@ -58,7 +59,7 @@ function Projects(props: ProjectsProps, ref: any) {
         </Grid>
         <Grid item md={4} xs={12}>
           <ProjectCard
-            image={SharesiteCover}
+            image={WatchtowerCover}
             title="Watchtower"
             category="Project"
             subtitle="

@@ -7,16 +7,18 @@ import Typography from "@mui/material/Typography";
 
 interface ReadmorePopupProps {
   title: string;
-  dialogContent: any;
+  dialogContent?: any;
   showButton?: boolean;
   open?: boolean;
+  url?: string;
 }
 
 export default function ReadmorePopup(props: ReadmorePopupProps) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
-    setOpen(true);
+    if (props.url) window.open(props.url, "_blank");
+    else setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);

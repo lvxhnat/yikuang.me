@@ -37,7 +37,7 @@ export default function InfiniwellExperience() {
             <Grid item md={12} xs={9}>
               <S.StyledTitle variant="h5">ML Engineer Intern</S.StyledTitle>
               <S.StyledSubtitle variant="h6" color={ColorsEnum.grey}>
-                Infiniwel AI - 🇳🇴 Trondheim
+                Infiniwell AI - 🇳🇴 Trondheim
               </S.StyledSubtitle>
             </Grid>
           </Grid>
@@ -75,7 +75,10 @@ export default function InfiniwellExperience() {
               ),
             )}
           </LogoWrapper>
-          <ReadmorePopup title="Infiniwell.ai" dialogContent="" />
+          <ReadmorePopup
+            title="Infiniwell.ai"
+            url="https://yikuang.notion.site/ECG-Heart-Disease-Classification-9db3d432e3ee4d949bf37f9cd34004dd?pvs=4"
+          />
         </Grid>
       </Grid>
     </S.InfiniwellContainer>

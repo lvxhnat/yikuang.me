@@ -8,7 +8,6 @@ import ImageCarousel from "../../../../components/ImageCarousel";
 import { LogoWrapper } from "../../style";
 import Image from "../../../../components/Image";
 import { Logos } from "../../logos";
-import NotionLink from "../../../../components/NotionLink";
 import { StyledLink } from "../../Experiences/style";
 
 export default function Watchtower() {
