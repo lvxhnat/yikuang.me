@@ -1,17 +1,19 @@
-FROM debian:buster-slim 
-FROM node:14.17.3 AS build-stage
+FROM debian:buster-slim
+
+FROM node:20-alpine as build-stage
 
 WORKDIR /app/frontend
-ENV PATH=/app/node_modules/.bin:$PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-# Update package sources to use Debian Buster repositories
-RUN sed -i 's/stretch/buster/' /etc/apt/sources.list
+COPY frontend/package.json frontend/yarn.lock ./
 
-COPY package.json .
-RUN npm install --silent
+RUN yarn config set progress false
+RUN yarn config set enableStrictSsl false
+RUN yarn install --frozen-lockfile --network-timeout=3000000 --network-concurrency 1 --prefer-offline --no-progress && yarn cache clean
+COPY frontend .
 
-COPY . .
+RUN yarn build
 
-RUN npm run build
+EXPOSE 3001
 
-EXPOSE 3000
+CMD ["yarn", "start"]
