@@ -13,6 +13,7 @@ export const ContainerWrapper = styled(Grid)(({ theme }) => ({
 export const StyledLink = styled("a")(({ theme }) => ({
   textDecoration: "none",
   color: "blue",
+  fontWeight: "bold",
 }));
 
 export const ImageWrapper = styled(Grid)(({ theme }) => ({

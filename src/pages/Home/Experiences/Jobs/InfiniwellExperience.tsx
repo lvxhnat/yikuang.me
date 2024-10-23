@@ -1,4 +1,3 @@
-import * as React from "react";
 import * as S from "../style";
 import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";

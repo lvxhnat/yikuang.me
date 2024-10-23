@@ -46,19 +46,6 @@ function Projects(props: ProjectsProps, ref: any) {
         </Grid>
         <Grid item md={4} xs={12}>
           <ProjectCard
-            image={SharesiteCover}
-            title="Sharesite"
-            category="Project"
-            subtitle="
-            Sharesite allows users to build their own personal portfolios in minutes, not days. 
-            Abstract away design & coding and focus on the good part - the content you want to put in your portfolio."
-            description="Jun 2024 - Jul 2024"
-            redirectURL="https://sharesite.me/"
-            dialogContent={<></>}
-          />
-        </Grid>
-        <Grid item md={4} xs={12}>
-          <ProjectCard
             image={WatchtowerCover}
             title="Watchtower"
             category="Project"
@@ -68,6 +55,19 @@ function Projects(props: ProjectsProps, ref: any) {
             "
             description="Jun 2020 - Present"
             dialogContent={<Watchtower />}
+          />
+        </Grid>
+        <Grid item md={4} xs={12}>
+          <ProjectCard
+            image={SharesiteCover}
+            title="Sharesite"
+            category="Project"
+            subtitle="
+            Sharesite allows users to build their own personal portfolios in minutes, not days. 
+            Abstract away design & coding and focus on the good part - the content you want to put in your portfolio."
+            description="Jun 2024 - Jul 2024"
+            redirectURL="https://sharesite.me/"
+            dialogContent={<></>}
           />
         </Grid>
       </Grid>

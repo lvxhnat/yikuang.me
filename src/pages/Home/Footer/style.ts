@@ -6,4 +6,8 @@ export const FooterContainer = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     padding: theme.spacing(2),
   },
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  fontWeight: "bold",
 }));
