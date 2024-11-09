@@ -37,7 +37,7 @@ export default function SynthesisExperience() {
               />
             </S.DynamicImageWrapper>
             <Grid item md={12} xs={9}>
-              <S.StyledTitle variant="h5">L1 Data Scientist </S.StyledTitle>
+              <S.StyledTitle variant="h5">Data Scientist </S.StyledTitle>
               <S.StyledSubtitle variant="h6">
                 Synthesis Partners - 🇸🇬 Singapore
               </S.StyledSubtitle>
@@ -51,35 +51,19 @@ export default function SynthesisExperience() {
 
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              At Synthesis, I was responsible for collaborating with fellow
-              engineers to implement open source intelligence systems at scale,
-              and for turning techno-jargon into plain English for non-technical
-              stakeholders and project clients.
+            Led effort in forecasting future scenarios for PepsiCo using <S.StyledLink target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-01919-7_6">Fuzzy Cognitive Mapping</S.StyledLink> & Monte Carlo models. 
+            Worked on forecasting product CAGR projections for structuring the Annual Operating Plan (AOP) for UK Snacks market with Pepsi’s foresight leads.
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Designed and implemented an Embedding-based Topic Model on RAPIDS
-              that achieved a 2.3x speedup and improved coherence scores by 21%
-              over traditional LDA methods. This model, now integral to several
-              large-scale client projects at
+            Worked with a team of UIUX and DevOps engineers to develop a BERT-based topic model that outperformed both quantitative (coherence score) and qualitative metrics when benchmarked against LDA. 
+            I worked on the FASTAPI backend, model implementation with NVIDIA RAPIDS libraries for
               <S.StyledLink href="https://www.nike.com"> Nike</S.StyledLink> and
               <S.StyledLink href="https://www.lego.com/en-sg/aboutus/lego-group">
                 {" "}
                 LEGO Group
               </S.StyledLink>
-              , enables deeper insights into public discourse surrounding
+              , allowing them to gain deeper insights into public discourse surrounding
               brands.
-            </S.StyledListItem>
-            <S.StyledListItem sx={{ display: "list-item" }}>
-              Worked on
-              <S.StyledLink href="https://link.springer.com/chapter/10.1007/978-3-031-01919-7_6">
-                {" "}
-                Fuzzy Cognitive Modelling (FCM){" "}
-              </S.StyledLink>
-              models for causal analysis and futures scenarios forecasting for
-              clients such as{" "}
-              <S.StyledLink href="https://www.pepsico.com/">
-                PepsiCo.
-              </S.StyledLink>
             </S.StyledListItem>
           </List>
 
@@ -130,20 +114,15 @@ export default function SynthesisExperience() {
             </S.StyledListItem>
 
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Implemented resolution-free Leiden algorithms for analysing large
-              social networks that ran 3x faster than{" "}
-              <S.StyledLink href="https://networkx.org/">NetworkX</S.StyledLink>{" "}
-              benchmarks for
-              <S.StyledLink href="https://about.netflix.com/en">
+              Worked with a team of DevOps engineers to implement resolution-free Leiden algorithms using NVIDIA cuGraph 
+              to analyse large social networks on Twitter, and identify user demographics for <S.StyledLink href="https://about.netflix.com/en">
                 {" "}
-                Netflix,
-              </S.StyledLink>{" "}
-              allowing them to gain first-hand insights into conversations
-              surrounding title releases.
+                Netflix
+              </S.StyledLink>{" "} title releases in the Latin American market. 
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              Implemented ETL on Airflow using rotating proxies for scraping
-              Instagram posts, cutting data curation time by half.
+              I was the youngest member in the company to join the Data Science team part-time, 
+              contributing to client projects and model research, while pursuing academic studies!
             </S.StyledListItem>
           </List>
 
