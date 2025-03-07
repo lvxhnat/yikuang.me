@@ -18,7 +18,7 @@ export default function Introduction() {
             align="left"
             style={{ paddingTop: "30px", paddingBottom: "10px" }}
           >
-            Data Scientist by trade, problem solver at heart.
+            Data scientist by trade, problem solver at heart
           </S.DescriptionWrapper>
 
           <S.SocialMediaWrapper container gap={2}>

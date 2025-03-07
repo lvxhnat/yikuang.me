@@ -1,4 +1,3 @@
-import * as React from "react";
 import * as S from "../style";
 import { LogoWrapper } from "./style";
 import { Logos } from "../../logos";
@@ -45,25 +44,18 @@ export default function SynthesisExperience() {
           </Grid>
 
           <S.StyledPosition>
-            <b>Part-Time / Full-Time </b> (Aug 2022 - Jul 2023) , (Jan 2024 -
-            Present)
+            <b>Part-Time / Full-Time </b> (Aug 2022 - Dec 2024)
           </S.StyledPosition>
 
           <List sx={{ listStyleType: "disc" }}>
             <S.StyledListItem sx={{ display: "list-item" }}>
-            Led effort in forecasting future scenarios for PepsiCo using <S.StyledLink target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-01919-7_6">Fuzzy Cognitive Mapping</S.StyledLink> & Monte Carlo models. 
-            Worked on forecasting product CAGR projections for structuring the Annual Operating Plan (AOP) for UK Snacks market with Pepsi’s foresight leads.
+            Developed an end-to-end RAPIDS and BERT-based topic modelling tool to surface brand conversations in large social media datasets (~500M+ entries), directly informing client strategies across projects.
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-            Worked with a team of UIUX and DevOps engineers to develop a BERT-based topic model that outperformed both quantitative (coherence score) and qualitative metrics when benchmarked against LDA. 
-            I worked on the FASTAPI backend, model implementation with NVIDIA RAPIDS libraries for
-              <S.StyledLink href="https://www.nike.com"> Nike</S.StyledLink> and
-              <S.StyledLink href="https://www.lego.com/en-sg/aboutus/lego-group">
-                {" "}
-                LEGO Group
-              </S.StyledLink>
-              , allowing them to gain deeper insights into public discourse surrounding
-              brands.
+            Accelerated graph algorithms by 42% through migrating existing NetworkX infrastructure to RAPIDS cuGraph, allowing for real-time user segmentation on large networks.
+            </S.StyledListItem>
+            <S.StyledListItem sx={{ display: "list-item" }}>
+            Implemented a RAG pipeline to query and summarise relevant documents in large datasets. Fine-tuned Google-T5, optimised memory usage with QLoRA, enhancing decision making within internal pod teams.
             </S.StyledListItem>
           </List>
 
@@ -121,8 +113,7 @@ export default function SynthesisExperience() {
               </S.StyledLink>{" "} title releases in the Latin American market. 
             </S.StyledListItem>
             <S.StyledListItem sx={{ display: "list-item" }}>
-              I was the youngest member in the company to join the Data Science team part-time, 
-              contributing to client projects and model research, while pursuing academic studies!
+            Wrote various data processing and automation scripts using Bash & Python to automate existing workflows.
             </S.StyledListItem>
           </List>
 
