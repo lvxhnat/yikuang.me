@@ -22,7 +22,7 @@ export const StyledAppBar = styled(AppBar)(({ theme }) => ({
 export const StyledBox = styled(Box)(({ theme }) => ({
   flexGrow: 1,
   justifyContent: "flex-end",
-  gap: theme.spacing(30),
+  gap: theme.spacing(10),
   marginRight: 30,
   display: "flex",
 }));

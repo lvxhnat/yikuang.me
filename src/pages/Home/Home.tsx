@@ -37,11 +37,11 @@ export default function Home() {
       />
       <Introduction />
       <AboutMe />
-      <Skillset ref={skillsRef} />
       <Experiences ref={experiencesRef} />
       <Projects ref={projectsRef} />
       <Footer />
       <FooterPopup />
+      <Skillset ref={skillsRef} />
     </S.HomeWrapper>
   );
 }

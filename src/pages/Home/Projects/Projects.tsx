@@ -7,6 +7,7 @@ import SemanticSearchCover from "../../../assets/projects/semantic-search/cover.
 import SharesiteCover from "../../../assets/projects/sharesite/cover.png";
 import StartupsCover from "../../../assets/projects/startup/mavro.png";
 import WatchtowerCover from "../../../assets/projects/watchtower/superset.png";
+import InflosCover from "../../../assets/projects/inflos.png";
 
 import SemanticSearch from "./SemanticSearch";
 import NumerousFailedStartups from "./NumerousFailedStartups";
@@ -21,7 +22,7 @@ function Projects(props: ProjectsProps, ref: any) {
     <S.ContainerWrapper container ref={ref}>
       <SM.TitleWrapper variant="h2" sx={{ paddingBottom: 5 }}>
         {" "}
-        Projects{" "}
+        Software Projects & Others {" "}
       </SM.TitleWrapper>
       <Grid container spacing={3}>
         <Grid item md={4} xs={12}>
@@ -32,6 +33,18 @@ function Projects(props: ProjectsProps, ref: any) {
             subtitle="A RAG Augmented Fine Tuned (RAFT) model using a Fine-tuned Flan-T5 for simplifying and explaining medical records to patients."
             description="Feb 2024 - Present"
             dialogContent={<SemanticSearch />}
+          />
+        </Grid>
+        <Grid item md={4} xs={12}>
+          <ProjectCard
+            image={InflosCover}
+            title="Inflos"
+            category="Project"
+            subtitle="
+            Building one of the biggest marketplaces in Singapore for exotic plants and aroids. Gained $2000 in sales and 400 active users within the first month of launching!"
+            description="Oct 2024 - Present"
+            redirectURL="https://inflos.co/"
+            dialogContent={<></>}
           />
         </Grid>
         <Grid item md={4} xs={12}>

@@ -15,14 +15,14 @@ export default function Homebar(props: HomebarProps) {
       <Container maxWidth="xl" sx={{ backgroundColor: "transparent" }}>
         <Toolbar disableGutters>
           <S.StyledBox>
-            <S.StyledButton onClick={props.skillsRef}>
-              <Typography variant="body1"> Skills</Typography>
-            </S.StyledButton>
             <S.StyledButton onClick={props.experiencesRef}>
               <Typography variant="body1"> Experiences</Typography>
             </S.StyledButton>
             <S.StyledButton onClick={props.projectsRef}>
               <Typography variant="body1"> Projects</Typography>
+            </S.StyledButton>
+            <S.StyledButton onClick={props.skillsRef}>
+              <Typography variant="body1"> Skills</Typography>
             </S.StyledButton>
           </S.StyledBox>
         </Toolbar>
